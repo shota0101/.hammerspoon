@@ -89,9 +89,9 @@ hs.hotkey.bind({'alt', 'shift'}, 'g', function()
 end)
 
 -- iTunes
-hs.hotkey.bind({'alt', 'shift'}, 'i', function()
-  hs.application.launchOrFocus('/System/Applications/Music.app')
-end)
+-- hs.hotkey.bind({'alt', 'shift'}, 'i', function()
+--   hs.application.launchOrFocus('/System/Applications/Music.app')
+-- end)
 
 -- Simulator.app
 hs.hotkey.bind({'alt', 'ctrl'}, 'n', function()
@@ -108,47 +108,22 @@ hs.hotkey.bind({'cmd', 'ctrl'}, '9', function()
   hs.application.launchOrFocus('/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app')
 end)
 
-hs.hotkey.bind({'command', 'ctrl'}, 'n', function()
-  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
-end)
-
 -------------------------------------------------------------------------------
 -- カーソル移動
+
+remapKey({'alt'}, 'i', keyCode('up', {'alt'}))
+remapKey({'alt'}, 'k', keyCode('down', {'alt'}))
+remapKey({'alt'}, 'j', keyCode('left', {'alt'}))
+remapKey({'alt'}, 'l', keyCode('right', {'alt'}))
+
+-------------------------------------------------------------------------------
+-- misc
 
 -- 「ctrl + ;」 : Keyboard->Shortcut->Misson Control->Application Window
 -- 「ctrl + '」 : Keyboard->Shortcut->Misson Control->通知センターを表示
 
-remapKey({'ctrl'}, 'p', keyCode('up'))
-remapKey({'ctrl'}, 'n', keyCode('down'))
-remapKey({'ctrl'}, 'b', keyCode('left'))
-remapKey({'ctrl'}, 'f', keyCode('right'))
-
-remapKey({'ctrl', 'shift'}, 'p', keyCode('up', {'shift'}))
-remapKey({'ctrl', 'shift'}, 'n', keyCode('down', {'shift'}))
-remapKey({'ctrl', 'shift'}, 'b', keyCode('left', {'shift'}))
-remapKey({'ctrl', 'shift'}, 'f', keyCode('right', {'shift'}))
-
-remapKey({'alt'}, 'p', keyCode('up', {'alt'}))
-remapKey({'alt'}, 'n', keyCode('down', {'alt'}))
-remapKey({'alt'}, 'b', keyCode('left', {'alt'}))
-remapKey({'alt'}, 'f', keyCode('right', {'alt'}))
-
-remapKey({'alt', 'shift'}, 'p', keyCode('up', {'alt', 'shift'}))
-remapKey({'alt', 'shift'}, 'n', keyCode('down', {'alt', 'shift'}))
-remapKey({'alt', 'shift'}, 'b', keyCode('left', {'alt', 'shift'}))
-remapKey({'alt', 'shift'}, 'f', keyCode('right', {'alt', 'shift'}))
-
-remapKey({'ctrl'}, 'a', keyCode('home'))
-remapKey({'ctrl'}, 'e', keyCode('end'))
-
-remapKey({'ctrl', 'shift'}, 'a', keyCode('home', {'shift'}))
-remapKey({'ctrl', 'shift'}, 'e', keyCode('end', {'shift'}))
-
-remapKey({'alt'}, 'v', keyCode('pageup'))
-remapKey({'ctrl'}, 'v', keyCode('pagedown'))
-remapKey({'ctrl', 'shift'}, 'v', keyCode('pagedown', {'shift'}))
-remapKey({'alt', 'shift'}, 'v', keyCode('pageup', {'shift'}))
-
+remapKey({'alt'}, 'c', keyCode('[', {'cmd', 'shift'}))
+remapKey({'alt'}, 'v', keyCode(']', {'cmd', 'shift'}))
 
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
@@ -172,9 +147,10 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
 -- f : 最大化
 remapKey({'command', 'ctrl'}, 'g', keyCode('escape'))
 launcher({'cmd', 'ctrl'}, 'h', 'Helium')
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'j', 'Vivaldi') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'k', 'Visual Studio Code') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'l', 'IntelliJ IDEA CE') end
+remapKey({'cmd', 'ctrl'}, 'j', keyCode('left'))
+remapKey({'cmd', 'ctrl'}, 'k', keyCode('down'))
+remapKey({'cmd', 'ctrl'}, 'l', keyCode('right'))
+launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
@@ -182,18 +158,21 @@ launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- r : Calendar
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
--- u : Keyboard->Shortcut->キーボード->メニューバーを操作対象にする
+remapKey({'cmd', 'ctrl'}, 'u', keyCode('home'))
+remapKey({'cmd', 'ctrl'}, 'i', keyCode('up'))
 -- i : Finderで情報を見る
--- o : Keyboard->Shortcut->キーボード->ステータスメニューを捜査対象にする
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'p', 'Opera') end
+remapKey({'cmd', 'ctrl'}, 'o', keyCode('end'))
+hs.hotkey.bind({'command', 'ctrl'}, 'p', function()
+  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
+end)
 
-launcher({'cmd', 'ctrl'}, 'z', 'Gas Mask')
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Firefox') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'Firefox') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Opera') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome') end
 remapKey({'cmd', 'ctrl'}, 'v', keyCode('down', {'alt', 'shift'})) -- Slackで次の未読チャンネルに移動
-if (notLeastFlag) then launcher({'command', 'ctrl'}, 'b', 'Safari') end
--- n : システム環境設定
-launcher({'cmd', 'ctrl'}, 'm', 'KeePassX')
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'b', 'Vivaldi') end
+remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
+remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
@@ -205,7 +184,7 @@ launcher({'cmd', 'ctrl'}, 'm', 'KeePassX')
 -- g
 -- h
 -- j
--- k
+if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'k', 'Visual Studio Code') end
 -- l
 
 -- q
@@ -240,7 +219,6 @@ if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'm', 'Android Studio') end
 -- h : Finderでホームディレクトリに移動
 -- h : Chromeでホームに移動
 -- h : 現在開いているウィンドウ以外を隠す
--- j
 -- k : chrome social に設定してたけど、slackでダイレクトメッセージ起動しちゃうから使わないようになった
 -- l
 
@@ -250,8 +228,8 @@ if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
 -- r : Chromeでキャッシュを消して更新など
 -- t : 消したタブを復活させるキー ( Slackでスレッド一覧を見る ) 
 -- y : XcodeのDebug Areaの表示・非表示を切り替える
--- u : empty ( iとの押し間違えを考慮して設定しないほうが良いかも ) 
-if (notLeastFlag) then launcher({'cmd', 'shift'}, 'i', 'Thunderbird') end -- 元々標準のメールクライアントを起動するキー
+-- u
+-- i
 -- o : FinderでDocumentsに移動
 -- o : Xcodeでファイル名を指定して開く
 -- p : Visual Studio Codeでコマンドパレットを開く
@@ -274,9 +252,11 @@ if (notLeastFlag) then launcher({'cmd', 'shift'}, 'i', 'Thunderbird') end -- 元
 -- f : ChromeでWebで検索
 -- g : empty
 -- h : 現在開いているウィンドウ以外を隠す
+remapKey({'cmd', 'alt'}, 'j', keyCode('left', {'shift'}))
 -- j : ChromeでJavaScriptコンソールを開く
--- k : empty
+remapKey({'cmd', 'alt'}, 'k', keyCode('down', {'shift'}))
 -- l : FinderでDownloadsディレクトリに移動
+remapKey({'cmd', 'alt'}, 'l', keyCode('right', {'shift'}))
 
 -- q : empty
 -- w : FinderやChromeで全てのタブを閉じる
@@ -284,10 +264,12 @@ if (notLeastFlag) then launcher({'cmd', 'shift'}, 'i', 'Thunderbird') end -- 元
 -- r : empty
 -- t : Finderでツールバーの表示・非表示を切り替え ( 必要な部分のみ表示する ) 
 -- y : Finderで全画面プレビュー
+remapKey({'cmd', 'alt'}, 'u', keyCode('home', {'shift'}))
 -- u : Chromeでソースコードを表示
+remapKey({'cmd', 'alt'}, 'i', keyCode('up', {'shift'}))
 -- i : Chromeでデベロッパーツールを開く
 -- i : Finderで情報を見る
--- o : empty
+remapKey({'cmd', 'alt'}, 'o', keyCode('end', {'shift'}))
 -- p : Finderでパスバー の表示・非表示を切り替える
 
 -- z : empty
@@ -295,8 +277,8 @@ if (notLeastFlag) then launcher({'cmd', 'shift'}, 'i', 'Thunderbird') end -- 元
 -- c : Chromeで要素を検証
 -- v : empty
 -- b : Chromeでブックマークマネージャーを開く
--- n : empty
--- m : empty
+remapKey({'cmd', 'alt'}, 'n', keyCode('pageup', {'shift'}))
+remapKey({'cmd', 'alt'}, 'm', keyCode('pagedown', {'shift'}))
 
 -------------------------------------------------------------------------------
 -- {'alt', 'shift'} 系
@@ -307,9 +289,9 @@ if (notLeastFlag) then launcher({'alt', 'shift'}, 'e', 'Microsoft Excel') end
 -- r
 -- t : FileMerge
 -- y :
--- u :
--- i : iTunes
--- o :
+-- u : move
+remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt', 'shift'}))
+-- o : move
 -- p : 前のパラグラフの選択
 -- if (notLeastFlag) then launcher({'alt', 'shift'}, 'p', 'Microsoft PowerPoint') end
 
@@ -319,9 +301,9 @@ launcher({'alt', 'shift'}, 's', 'Simplenote')
 -- f : 次の単語を選択
 -- g : TextEdit.app
 -- h :
--- j :
--- k : 
-if (notLeastFlag) then launcher({'alt', 'shift'}, 'l', 'LINE') end
+remapKey({'alt', 'shift'}, 'j', keyCode('left', {'alt', 'shift'}))
+remapKey({'alt', 'shift'}, 'k', keyCode('down', {'alt', 'shift'}))
+remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt', 'shift'}))
 
 -- z : キーボード->アクセシビリティ->ズーム機能->拡大
 -- x : キーボード->アクセシビリティ->ズーム機能->ズーム機能のオン/オフ
