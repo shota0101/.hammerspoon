@@ -137,8 +137,8 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
 -- s : finder
 -- d : 辞書
 -- f : 最大化
-remapKey({'cmd', 'ctrl'}, 'g', keyCode('escape'))
-remapKey({'cmd', 'ctrl'}, 'h', keyCode('return'))
+-- g
+-- h
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
@@ -179,18 +179,18 @@ remapKey({'alt'}, 'u', keyCode('home'))
 remapKey({'alt'}, 'i', keyCode('up'))
 remapKey({'alt'}, 'o', keyCode('end'))
 -- p
-
+ 
 -- a
 -- s : emacsでmarkdownのh
 remapKey({'alt'}, 'd', keyCode('delete'))
 remapKey({'alt'}, 'f', keyCode('delete', {'ctrl'}))
--- g
+remapKey({'alt'}, 'g', keyCode('escape'))
 remapKey({'alt'}, 'h', keyCode('return'))
 remapKey({'alt'}, 'j', keyCode('left'))
 remapKey({'alt'}, 'k', keyCode('down'))
 remapKey({'alt'}, 'l', keyCode('right'))
 
-remapKey({'alt'}, 'z', keyCode('escape'))
+-- z
 -- x
 -- c
 -- v
@@ -217,12 +217,12 @@ remapKey({'alt', 'ctrl'}, 'o', keyCode('end', {'shift'}))
 -- d
 -- f
 -- g
-remapKey({'alt', 'ctrl'}, 'h', keyCode('return', {'shift'}))
+-- h
 remapKey({'alt', 'ctrl'}, 'j', keyCode('left', {'shift'}))
 remapKey({'alt', 'ctrl'}, 'k', keyCode('down', {'shift'}))
 remapKey({'alt', 'ctrl'}, 'l', keyCode('right', {'shift'}))
 
-remapKey({'alt', 'ctrl'}, 'z', keyCode('escape', {'shift'}))
+-- z
 -- x
 -- c
 -- v
@@ -240,7 +240,6 @@ remapKey({'alt', 'ctrl'}, 'm', keyCode('pagedown', {'shift'}))
 -- f : Xcodeでgrep検索
 -- g : Finderでパスを入力して移動
 -- h : Finderでホームディレクトリに移動
--- h : BetterTouchTool
 -- h : Chromeでホームに移動
 -- h : 現在開いているウィンドウ以外を隠す
 -- j : BetterTouchTool
