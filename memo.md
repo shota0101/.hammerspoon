@@ -5,5 +5,9 @@ if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'n', 'Xcode') end
 if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'm', 'Android Studio') end
 if (notLeastFlag) then launcher({'alt', 'shift'}, 'l', 'LINE') end
 launcher({'cmd', 'ctrl'}, 'z', 'Gas Mask')
-emacsローワーキャメルケース変換キーのリマップ
+
+## emacs
+
+- ローワーキャメルケース変換キーのリマップ
+- option使う系
 

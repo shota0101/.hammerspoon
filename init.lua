@@ -181,9 +181,9 @@ remapKey({'alt'}, 'o', keyCode('end'))
 -- p
 
 -- a
-remapKey({'alt'}, 's', keyCode('delete', {'ctrl'}))
+-- s : emacsでmarkdownのh
 remapKey({'alt'}, 'd', keyCode('delete'))
--- f
+remapKey({'alt'}, 'f', keyCode('delete', {'ctrl'}))
 -- g
 remapKey({'alt'}, 'h', keyCode('return'))
 remapKey({'alt'}, 'j', keyCode('left'))
