@@ -109,14 +109,6 @@ hs.hotkey.bind({'cmd', 'ctrl'}, '9', function()
 end)
 
 -------------------------------------------------------------------------------
--- カーソル移動
-
-remapKey({'alt'}, 'i', keyCode('up', {'alt'}))
-remapKey({'alt'}, 'k', keyCode('down', {'alt'}))
-remapKey({'alt'}, 'j', keyCode('left', {'alt'}))
-remapKey({'alt'}, 'l', keyCode('right', {'alt'}))
-
--------------------------------------------------------------------------------
 -- misc
 
 -- 「ctrl + ;」 : Keyboard->Shortcut->Misson Control->Application Window
@@ -145,26 +137,26 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
 -- s : finder
 -- d : 辞書
 -- f : 最大化
-remapKey({'command', 'ctrl'}, 'g', keyCode('escape'))
-launcher({'cmd', 'ctrl'}, 'h', 'Helium')
-remapKey({'cmd', 'ctrl'}, 'j', keyCode('left'))
-remapKey({'cmd', 'ctrl'}, 'k', keyCode('down'))
-remapKey({'cmd', 'ctrl'}, 'l', keyCode('right'))
+remapKey({'cmd', 'ctrl'}, 'g', keyCode('escape'))
+remapKey({'cmd', 'ctrl'}, 'h', keyCode('return'))
+remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
+remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
+remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
--- e : emacs
+-- e
 -- r : Calendar
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
-remapKey({'cmd', 'ctrl'}, 'u', keyCode('home'))
-remapKey({'cmd', 'ctrl'}, 'i', keyCode('up'))
+-- u
+remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
-remapKey({'cmd', 'ctrl'}, 'o', keyCode('end'))
-hs.hotkey.bind({'command', 'ctrl'}, 'p', function()
+hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
 end)
+if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'p', 'Visual Studio Code') end
 
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'Firefox') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Opera') end
@@ -175,17 +167,39 @@ remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 
 -------------------------------------------------------------------------------
--- {'alt', 'ctrl'}系
+-- {'alt'}系
+
+remapKey({'alt'}, 'q', keyCode('F7'))
+remapKey({'alt'}, 'w', keyCode('F10'))
+-- e : emacs
+-- r
+-- t
+-- y
+remapKey({'alt'}, 'u', keyCode('home'))
+remapKey({'alt'}, 'i', keyCode('up'))
+remapKey({'alt'}, 'o', keyCode('end'))
+-- p
 
 -- a
--- s
--- d
--- f : Finder
+remapKey({'alt'}, 's', keyCode('delete', {'ctrl'}))
+remapKey({'alt'}, 'd', keyCode('delete'))
+-- f
 -- g
--- h
--- j
-if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'k', 'Visual Studio Code') end
--- l
+remapKey({'alt'}, 'h', keyCode('return'))
+remapKey({'alt'}, 'j', keyCode('left'))
+remapKey({'alt'}, 'k', keyCode('down'))
+remapKey({'alt'}, 'l', keyCode('right'))
+
+remapKey({'alt'}, 'z', keyCode('escape'))
+-- x
+-- c
+-- v
+-- b
+remapKey({'alt'}, 'n', keyCode('pageup'))
+remapKey({'alt'}, 'm', keyCode('pagedown'))
+
+-------------------------------------------------------------------------------
+-- {'alt', 'ctrl'}系
 
 -- q
 -- w
@@ -193,19 +207,28 @@ if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'k', 'Visual Studio Code') end
 -- r
 -- t
 -- y
--- u
--- i
--- o
+remapKey({'alt', 'ctrl'}, 'u', keyCode('home', {'shift'}))
+remapKey({'alt', 'ctrl'}, 'i', keyCode('up', {'shift'}))
+remapKey({'alt', 'ctrl'}, 'o', keyCode('end', {'shift'}))
 -- p
 
--- if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'z', 'Sourcetree') end
+-- a
+-- s
+-- d
+-- f
+-- g
+remapKey({'alt', 'ctrl'}, 'h', keyCode('return', {'shift'}))
+remapKey({'alt', 'ctrl'}, 'j', keyCode('left', {'shift'}))
+remapKey({'alt', 'ctrl'}, 'k', keyCode('down', {'shift'}))
+remapKey({'alt', 'ctrl'}, 'l', keyCode('right', {'shift'}))
+
+remapKey({'alt', 'ctrl'}, 'z', keyCode('escape', {'shift'}))
 -- x
 -- c
-
--- v : keyCode('pagedown', {'shift'})
+-- v
 -- b
-if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'n', 'Xcode') end
-if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'm', 'Android Studio') end
+remapKey({'alt', 'ctrl'}, 'n', keyCode('pageup', {'shift'}))
+remapKey({'alt', 'ctrl'}, 'm', keyCode('pagedown', {'shift'}))
 
 -------------------------------------------------------------------------------
 -- {'cmd', 'shift'} 系
@@ -217,27 +240,32 @@ if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'm', 'Android Studio') end
 -- f : Xcodeでgrep検索
 -- g : Finderでパスを入力して移動
 -- h : Finderでホームディレクトリに移動
+-- h : BetterTouchTool
 -- h : Chromeでホームに移動
 -- h : 現在開いているウィンドウ以外を隠す
+-- j : BetterTouchTool
 -- k : chrome social に設定してたけど、slackでダイレクトメッセージ起動しちゃうから使わないようになった
--- l
+-- k : BetterTouchTool
+-- l : BetterTouchTool
+-- ; : BetterTouchTool
+-- ' : BetterTouchTool
 
 if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
--- w
+-- w : BetterTouchTool
 -- e : Visual Studio Code -> View -> Exploror
 -- r : Chromeでキャッシュを消して更新など
 -- t : 消したタブを復活させるキー ( Slackでスレッド一覧を見る ) 
 -- y : XcodeのDebug Areaの表示・非表示を切り替える
--- u
--- i
+-- u : BetterTouchTool
+-- i : BetterTouchTool
 -- o : FinderでDocumentsに移動
 -- o : Xcodeでファイル名を指定して開く
 -- p : Visual Studio Codeでコマンドパレットを開く
 
 -- z : ⌘zを戻す
--- x
--- c
--- v
+launcher({'cmd', 'shift'}, 'x', 'Helium')
+-- c : BetterTouchTool
+-- v : BetterTouchTool
 -- b : Chromeでブックマークバーの表示・非表示を切り替え
 -- n : Chromeでシークレットモード
 -- m : Chromeでユーザの切り替え
@@ -252,11 +280,9 @@ if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
 -- f : ChromeでWebで検索
 -- g : empty
 -- h : 現在開いているウィンドウ以外を隠す
-remapKey({'cmd', 'alt'}, 'j', keyCode('left', {'shift'}))
 -- j : ChromeでJavaScriptコンソールを開く
-remapKey({'cmd', 'alt'}, 'k', keyCode('down', {'shift'}))
+-- k
 -- l : FinderでDownloadsディレクトリに移動
-remapKey({'cmd', 'alt'}, 'l', keyCode('right', {'shift'}))
 
 -- q : empty
 -- w : FinderやChromeで全てのタブを閉じる
@@ -264,12 +290,10 @@ remapKey({'cmd', 'alt'}, 'l', keyCode('right', {'shift'}))
 -- r : empty
 -- t : Finderでツールバーの表示・非表示を切り替え ( 必要な部分のみ表示する ) 
 -- y : Finderで全画面プレビュー
-remapKey({'cmd', 'alt'}, 'u', keyCode('home', {'shift'}))
 -- u : Chromeでソースコードを表示
-remapKey({'cmd', 'alt'}, 'i', keyCode('up', {'shift'}))
 -- i : Chromeでデベロッパーツールを開く
 -- i : Finderで情報を見る
-remapKey({'cmd', 'alt'}, 'o', keyCode('end', {'shift'}))
+-- o
 -- p : Finderでパスバー の表示・非表示を切り替える
 
 -- z : empty
@@ -277,8 +301,8 @@ remapKey({'cmd', 'alt'}, 'o', keyCode('end', {'shift'}))
 -- c : Chromeで要素を検証
 -- v : empty
 -- b : Chromeでブックマークマネージャーを開く
-remapKey({'cmd', 'alt'}, 'n', keyCode('pageup', {'shift'}))
-remapKey({'cmd', 'alt'}, 'm', keyCode('pagedown', {'shift'}))
+-- n
+-- m
 
 -------------------------------------------------------------------------------
 -- {'alt', 'shift'} 系
@@ -290,7 +314,7 @@ if (notLeastFlag) then launcher({'alt', 'shift'}, 'e', 'Microsoft Excel') end
 -- t : FileMerge
 -- y :
 -- u : move
-remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt', 'shift'}))
+remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
 -- o : move
 -- p : 前のパラグラフの選択
 -- if (notLeastFlag) then launcher({'alt', 'shift'}, 'p', 'Microsoft PowerPoint') end
@@ -301,9 +325,9 @@ launcher({'alt', 'shift'}, 's', 'Simplenote')
 -- f : 次の単語を選択
 -- g : TextEdit.app
 -- h :
-remapKey({'alt', 'shift'}, 'j', keyCode('left', {'alt', 'shift'}))
-remapKey({'alt', 'shift'}, 'k', keyCode('down', {'alt', 'shift'}))
-remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt', 'shift'}))
+remapKey({'alt', 'shift'}, 'j', keyCode('left', {'alt'}))
+remapKey({'alt', 'shift'}, 'k', keyCode('down', {'alt'}))
+remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt'}))
 
 -- z : キーボード->アクセシビリティ->ズーム機能->拡大
 -- x : キーボード->アクセシビリティ->ズーム機能->ズーム機能のオン/オフ
@@ -328,7 +352,6 @@ if (notLeastFlag) then launcher({'alt', 'shift'}, 'm', 'Microsoft Word') end
 
 -- launcher({'cmd', 'ctrl'}, 'z', 'STS') -- なくてもいい
 -- launcher({'cmd', 'ctrl'}, 'b', 'SRWare Iron')
--- remapKey({'command', 'ctrl'}, 'r', keyCode('return'))
 
 -------------------------------------------------------------------------------
 if (leftHandFlag) then
@@ -338,3 +361,4 @@ if (leftHandFlag) then
    remapKey({'command'}, 'e', keyCode('right'))
    remapKey({'command'}, 'd', keyCode('delete', {'command'}))
 end
+
