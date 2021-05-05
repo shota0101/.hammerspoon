@@ -59,7 +59,7 @@ appsWatcher:start()
 -- アプリごとの設定
 
 -- Finder.app
-hs.hotkey.bind({'command', 'ctrl'}, 's', function()
+hs.hotkey.bind({'alt'}, 'a', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
@@ -134,7 +134,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
 
 -- a : chrome
--- s : finder
+-- s
 -- d : 辞書
 -- f : 最大化
 -- g
@@ -180,7 +180,7 @@ remapKey({'alt'}, 'i', keyCode('up'))
 remapKey({'alt'}, 'o', keyCode('end'))
 -- p
  
--- a
+-- a : finder
 -- s : emacsでmarkdownのh
 remapKey({'alt'}, 'd', keyCode('delete'))
 remapKey({'alt'}, 'f', keyCode('delete', {'ctrl'}))
