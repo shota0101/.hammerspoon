@@ -146,7 +146,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
--- e
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'e', 'Opera') end
 -- r : Calendar
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
@@ -158,11 +158,11 @@ hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
 end)
 if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'p', 'Visual Studio Code') end
 
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'Firefox') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Opera') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'Vivaldi') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'h', 'Firefox') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome') end
 remapKey({'cmd', 'ctrl'}, 'v', keyCode('down', {'alt', 'shift'})) -- Slackで次の未読チャンネルに移動
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'b', 'Vivaldi') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'b', 'Safari') end
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 
@@ -308,15 +308,14 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 
 -- q : QuickTime Player
 if (notLeastFlag) then launcher({'alt', 'shift'}, 'w', 'WeChat') end
-if (notLeastFlag) then launcher({'alt', 'shift'}, 'e', 'Microsoft Excel') end
+if (notLeastFlag) then launcher({'alt', 'shift'}, 'e', 'LINE') end
 -- r
 -- t : FileMerge
 -- y :
--- u : move
+-- u : emacsで大文字変換
 remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
--- o : move
+-- o
 -- p : 前のパラグラフの選択
--- if (notLeastFlag) then launcher({'alt', 'shift'}, 'p', 'Microsoft PowerPoint') end
 
 -- a : キーボード->アクセシビリティ->ズーム機能->縮小
 launcher({'alt', 'shift'}, 's', 'Simplenote')
@@ -327,14 +326,15 @@ launcher({'alt', 'shift'}, 's', 'Simplenote')
 remapKey({'alt', 'shift'}, 'j', keyCode('left', {'alt'}))
 remapKey({'alt', 'shift'}, 'k', keyCode('down', {'alt'}))
 remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt'}))
+-- l : emacsで小文字変換
 
 -- z : キーボード->アクセシビリティ->ズーム機能->拡大
 -- x : キーボード->アクセシビリティ->ズーム機能->ズーム機能のオン/オフ
--- c
+-- c : emacsでアッパーキャメルケース
 -- v : shift押したままpageup
 -- b : 前の単語を選択
 -- n : 次の段落を選択
-if (notLeastFlag) then launcher({'alt', 'shift'}, 'm', 'Microsoft Word') end
+-- m
 
 -------------------------------------------------------------------------------
 --[[
