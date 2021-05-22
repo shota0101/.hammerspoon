@@ -59,7 +59,7 @@ appsWatcher:start()
 -- アプリごとの設定
 
 -- Finder.app
-hs.hotkey.bind({'alt'}, 'a', function()
+hs.hotkey.bind({'alt'}, 'r', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
@@ -172,7 +172,7 @@ remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 remapKey({'alt'}, 'q', keyCode('F7'))
 remapKey({'alt'}, 'w', keyCode('F10'))
 -- e : emacs
--- r
+-- r : finder
 -- t
 -- y
 remapKey({'alt'}, 'u', keyCode('home'))
@@ -180,7 +180,7 @@ remapKey({'alt'}, 'i', keyCode('up'))
 remapKey({'alt'}, 'o', keyCode('end'))
 -- p
  
--- a : finder
+-- a
 -- s : emacsでmarkdownのh
 remapKey({'alt'}, 'd', keyCode('delete'))
 remapKey({'alt'}, 'f', keyCode('delete', {'ctrl'}))
