@@ -153,12 +153,13 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'e', 'Opera') end
 -- u
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
-hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
-  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
-end)
-if (notLeastFlag) then launcher({'alt', 'ctrl'}, 'p', 'Visual Studio Code') end
+-- hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
+--   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
+-- end)
+launcher({'command', 'ctrl'}, 'o', 'System Preferences')
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code') end
 
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'Vivaldi') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'InteliJ IDEA CE') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'h', 'Firefox') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome') end
 remapKey({'cmd', 'ctrl'}, 'v', keyCode('down', {'alt', 'shift'})) -- Slackで次の未読チャンネルに移動
