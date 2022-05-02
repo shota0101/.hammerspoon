@@ -138,7 +138,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
 -- d : 辞書
 -- f : 最大化
 -- g
--- h
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'h', 'Firefox') end
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
@@ -160,7 +160,7 @@ launcher({'command', 'ctrl'}, 'o', 'System Preferences')
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code') end
 
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'h', 'Firefox') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Android Studio') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome') end
 remapKey({'cmd', 'ctrl'}, 'v', keyCode('down', {'alt', 'shift'})) -- Slackで次の未読チャンネルに移動
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'b', 'Safari') end
