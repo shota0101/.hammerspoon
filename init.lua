@@ -134,7 +134,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
 
 -- a : chrome
--- s
+-- s : Fuwari
 -- d : 辞書
 -- f : 最大化
 -- g
