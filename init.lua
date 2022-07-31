@@ -124,7 +124,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'tab', 'Slack') end
 -- `
 -- 1 : Outlookで今日の予定
 -- 2 : Outlookで今週の予定
--- 3
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '3', 'AS Timer') end
 -- 4 : Outlookで今月の予定
 -- 5
 -- 6
