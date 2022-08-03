@@ -200,6 +200,7 @@ remapKey({'alt'}, 'l', keyCode('right'))
 -- b
 remapKey({'alt'}, 'n', keyCode('pageup'))
 remapKey({'alt'}, 'm', keyCode('pagedown'))
+remapKey({'alt'}, ',', keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
