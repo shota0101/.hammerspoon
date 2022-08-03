@@ -122,16 +122,18 @@ remapKey({'alt'}, 'v', keyCode(']', {'cmd', 'shift'}))
    
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'tab', 'Slack') end
 -- `
--- 1 : Outlookで今日の予定
--- 2 : Outlookで今週の予定
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '1', 'LINE') end
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '2', 'WeChat') end
+-- 2
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '3', 'AS Timer') end
--- 4 : Outlookで今月の予定
+-- 4
 -- 5
 -- 6
 -- 7
+-- 8 : BetterTouchTool
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
 -- 9 : Cisco AnyConnect Secure Mobility Client
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '0', 'Microsoft Outlook') end
+-- 0
 
 -- a : chrome
 -- s : Fuwari
@@ -150,7 +152,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'e', 'Opera') end
 -- r : Calendar
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
--- u
+-- u : BetterTouchTool
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
 -- hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
@@ -162,7 +164,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Android Studio') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome') end
-remapKey({'cmd', 'ctrl'}, 'v', keyCode('down', {'alt', 'shift'})) -- Slackで次の未読チャンネルに移動
+if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'v', 'Microsoft Outlook') end
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'b', 'Safari') end
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
@@ -256,7 +258,7 @@ if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
 -- r : Chromeでキャッシュを消して更新など
 -- t : 消したタブを復活させるキー ( Slackでスレッド一覧を見る ) 
 -- y : XcodeのDebug Areaの表示・非表示を切り替える
--- u : BetterTouchTool
+-- u
 -- i : BetterTouchTool
 -- o : FinderでDocumentsに移動
 -- o : Xcodeでファイル名を指定して開く
