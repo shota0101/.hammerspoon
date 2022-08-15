@@ -73,6 +73,11 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 'r', function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
 
+-- Terminal.app
+hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
+  hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
+end)
+
 -- QuickTime Player.app
 hs.hotkey.bind({'alt', 'shift'}, 'q', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
