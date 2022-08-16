@@ -131,16 +131,15 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
 -- 0
 
 -- a : chrome
--- s : Fuwari
+-- s
 -- d : 辞書
 -- f : 最大化
--- g
+-- g : Terminal
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'h', 'Firefox') end
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
-remapKey({'cmd', 'ctrl'}, "\'", keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
@@ -166,6 +165,11 @@ remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 
 -------------------------------------------------------------------------------
+-- {'ctrl'}系
+
+m : Clipy
+
+-------------------------------------------------------------------------------
 -- {'alt'}系
 
 remapKey({'alt'}, 'q', keyCode('F7'))
@@ -179,7 +183,7 @@ remapKey({'alt'}, 'i', keyCode('up'))
 remapKey({'alt'}, 'o', keyCode('end'))
 -- p
  
--- a
+-- a : Fuwari
 -- s : emacsでmarkdownのh
 remapKey({'alt'}, 'd', keyCode('delete'))
 remapKey({'alt'}, 'f', keyCode('delete', {'ctrl'}))
@@ -242,8 +246,8 @@ remapKey({'alt', 'ctrl'}, 'm', keyCode('pagedown', {'shift'}))
 remapKey({'cmd', 'shift'}, 'j', keyCode('[', {'cmd', 'shift'}))
 remapKey({'cmd', 'shift'}, 'k', keyCode('pagedown'))
 remapKey({'cmd', 'shift'}, 'l', keyCode(']', {'cmd', 'shift'}))
--- ; : 
--- ' : 
+remapKey({'cmd', 'shift'}, ';', keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
+-- ' : 設定する場合は"\'" のようにスケープする
 
 if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
 -- w
