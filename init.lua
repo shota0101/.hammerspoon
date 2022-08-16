@@ -59,7 +59,7 @@ appsWatcher:start()
 -- アプリごとの設定
 
 -- Finder.app
-hs.hotkey.bind({'alt'}, 'r', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 's', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
@@ -84,7 +84,7 @@ hs.hotkey.bind({'alt', 'shift'}, 'q', function()
 end)
 
 -- Preview.app
-hs.hotkey.bind({'alt', 'shift'}, 'd', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
   hs.application.launchOrFocus('/System/Applications/Preview.app')
 end)
 
@@ -130,8 +130,8 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
 -- 9 : Cisco AnyConnect Secure Mobility Client
 -- 0
 
--- a : chrome
--- s
+-- a : Preview
+-- s : Finder
 -- d : 辞書
 -- f : 最大化
 -- g : Terminal
@@ -175,29 +175,31 @@ remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 remapKey({'alt'}, 'q', keyCode('F7'))
 remapKey({'alt'}, 'w', keyCode('F10'))
 -- e : emacs
--- r : finder
+remapKey({'alt'}, 'r', keyCode('return'))
 -- t
 -- y
 remapKey({'alt'}, 'u', keyCode('home'))
 remapKey({'alt'}, 'i', keyCode('up'))
 remapKey({'alt'}, 'o', keyCode('end'))
 -- p
- 
--- a : Fuwari
--- s : emacsでmarkdownのh
+
+-- a
+-- s : emacsでmarkdownのキーバインド
 remapKey({'alt'}, 'd', keyCode('delete'))
-remapKey({'alt'}, 'f', keyCode('delete', {'ctrl'}))
+-- f : Fuwari
 remapKey({'alt'}, 'g', keyCode('escape'))
-remapKey({'alt'}, 'h', keyCode('return'))
+-- h
 remapKey({'alt'}, 'j', keyCode('left'))
 remapKey({'alt'}, 'k', keyCode('down'))
 remapKey({'alt'}, 'l', keyCode('right'))
 
 -- z
 -- x
--- c
+remapKey({'alt'}, 'c', keyCode('delete', {'ctrl'}))
 -- v
 -- b
+remapKey({'alt'}, 'n', keyCode('pageup'))
+remapKey({'alt'}, 'm', keyCode('pagedown'))
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
@@ -319,7 +321,7 @@ remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
 
 -- a : キーボード->アクセシビリティ->ズーム機能->縮小
 launcher({'alt', 'shift'}, 's', 'Simplenote')
--- d : Preview
+-- d
 -- f : 次の単語を選択
 -- g : TextEdit.app
 -- h :
