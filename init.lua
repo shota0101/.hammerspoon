@@ -114,24 +114,14 @@ hs.hotkey.bind({'cmd', 'ctrl'}, '9', function()
 end)
 
 -------------------------------------------------------------------------------
--- misc
-
--- 「ctrl + ;」 : Keyboard->Shortcut->Misson Control->Application Window
--- 「ctrl + '」 : Keyboard->Shortcut->Misson Control->通知センターを表示
-
-remapKey({'alt'}, 'c', keyCode('[', {'cmd', 'shift'}))
-remapKey({'alt'}, 'v', keyCode(']', {'cmd', 'shift'}))
-
--------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
    
 if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'tab', 'Slack') end
--- `
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '1', 'LINE') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '2', 'WeChat') end
--- 2
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '3', 'AS Timer') end
--- 4
+-- ` : ウィンドウの選択
+-- 1 : BetterTouchTool
+-- 2 : BetterTouchTool
+-- 3 : BetterTouchTool
+-- 4 : BetterTouchTool
 -- 5
 -- 6
 -- 7
@@ -150,6 +140,7 @@ remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
+remapKey({'cmd', 'ctrl'}, "\'", keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
@@ -203,9 +194,6 @@ remapKey({'alt'}, 'l', keyCode('right'))
 -- c
 -- v
 -- b
-remapKey({'alt'}, 'n', keyCode('pageup'))
-remapKey({'alt'}, 'm', keyCode('pagedown'))
-remapKey({'alt'}, ',', keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
@@ -251,29 +239,28 @@ remapKey({'alt', 'ctrl'}, 'm', keyCode('pagedown', {'shift'}))
 -- h : Finderでホームディレクトリに移動
 -- h : Chromeでホームに移動
 -- h : 現在開いているウィンドウ以外を隠す
--- j : BetterTouchTool
--- k : chrome social に設定してたけど、slackでダイレクトメッセージ起動しちゃうから使わないようになった
--- k : BetterTouchTool
--- l : BetterTouchTool
--- ; : BetterTouchTool
--- ' : BetterTouchTool
+remapKey({'cmd', 'shift'}, 'j', keyCode('[', {'cmd', 'shift'}))
+remapKey({'cmd', 'shift'}, 'k', keyCode('pagedown'))
+remapKey({'cmd', 'shift'}, 'l', keyCode(']', {'cmd', 'shift'}))
+-- ; : 
+-- ' : 
 
 if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
--- w : BetterTouchTool
+-- w
 -- e : Visual Studio Code -> View -> Exploror
 -- r : Chromeでキャッシュを消して更新など
 -- t : 消したタブを復活させるキー ( Slackでスレッド一覧を見る ) 
 -- y : XcodeのDebug Areaの表示・非表示を切り替える
 -- u
--- i : BetterTouchTool
+remapKey({'cmd', 'shift'}, 'i', keyCode('pageup'))
 -- o : FinderでDocumentsに移動
 -- o : Xcodeでファイル名を指定して開く
 -- p : Visual Studio Codeでコマンドパレットを開く
 
 -- z : ⌘zを戻す
 launcher({'cmd', 'shift'}, 'x', 'Helium')
--- c : BetterTouchTool
--- v : BetterTouchTool
+-- c
+-- v
 -- b : Chromeでブックマークバーの表示・非表示を切り替え
 -- n : Chromeでシークレットモード
 -- m : Chromeでユーザの切り替え
@@ -281,33 +268,33 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -------------------------------------------------------------------------------
 -- {'cmd', 'alt'} 系
 
--- a : empty
+-- a
 -- s : Finderで左のペインの表示・非表示を切り替える
--- d : empty
+-- d
 -- f : Finderで検索
 -- f : ChromeでWebで検索
--- g : empty
+-- g
 -- h : 現在開いているウィンドウ以外を隠す
 -- j : ChromeでJavaScriptコンソールを開く
 -- k
 -- l : FinderでDownloadsディレクトリに移動
 
--- q : empty
+-- q
 -- w : FinderやChromeで全てのタブを閉じる
--- e : empty
--- r : empty
+-- e
+-- r
 -- t : Finderでツールバーの表示・非表示を切り替え ( 必要な部分のみ表示する ) 
 -- y : Finderで全画面プレビュー
 -- u : Chromeでソースコードを表示
--- i : Chromeでデベロッパーツールを開く
 -- i : Finderで情報を見る
+-- i : Chromeでデベロッパーツールを開く
 -- o
 -- p : Finderでパスバー の表示・非表示を切り替える
 
--- z : empty
--- x : empty
+-- z
+-- x
 -- c : Chromeで要素を検証
--- v : empty
+-- v
 -- b : Chromeでブックマークマネージャーを開く
 -- n
 -- m
@@ -318,7 +305,7 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -- q : QuickTime Player
 if (notLeastFlag) then launcher({'alt', 'shift'}, 'w', 'WeChat') end
 if (notLeastFlag) then launcher({'alt', 'shift'}, 'e', 'LINE') end
--- r
+if (notLeastFlag) then launcher({'alt', 'shift'}, 'r', 'AS Timer') end
 -- t : FileMerge
 -- y :
 -- u : emacsで大文字変換
@@ -346,6 +333,11 @@ remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt'}))
 -- m
 
 -------------------------------------------------------------------------------
+-- memo
+
+-- 「ctrl + ;」 : Keyboard->Shortcut->Misson Control->Application Window
+-- 「ctrl + '」 : Keyboard->Shortcut->Misson Control->通知センターを表示
+
 --[[
 * controll + shift + t
   * InteliJで実装クラスからユニットテストに移動
@@ -356,17 +348,11 @@ remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt'}))
 ]]
 
 -------------------------------------------------------------------------------
--- 今は使っていない
-
--- launcher({'cmd', 'ctrl'}, 'z', 'STS') -- なくてもいい
--- launcher({'cmd', 'ctrl'}, 'b', 'SRWare Iron')
-
--------------------------------------------------------------------------------
 if (leftHandFlag) then
-   remapKey({'command'}, 'w', keyCode('up'))
-   remapKey({'command'}, 's', keyCode('down'))
-   remapKey({'command'}, 'q', keyCode('left'))
-   remapKey({'command'}, 'e', keyCode('right'))
-   remapKey({'command'}, 'd', keyCode('delete', {'command'}))
+   remapKey({'command'}, 'e', keyCode('up'))
+   remapKey({'command'}, 'd', keyCode('down'))
+   remapKey({'command'}, 's', keyCode('left'))
+   remapKey({'command'}, 'f', keyCode('right'))
+   remapKey({'command'}, 'g', keyCode('delete', {'command'}))
 end
 
