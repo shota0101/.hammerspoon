@@ -1,4 +1,3 @@
-notLeastFlag=true
 leftHandFlag=false
 
 -- 関数定義
@@ -116,7 +115,7 @@ end)
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
    
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'tab', 'Slack') end
+launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
 -- ` : ウィンドウの選択
 -- 1 : BetterTouchTool
 -- 2 : BetterTouchTool
@@ -126,7 +125,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'tab', 'Slack') end
 -- 6
 -- 7
 -- 8 : BetterTouchTool
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
+launcher({'cmd', 'ctrl'}, '8', 'Jasper')
 -- 9 : Cisco AnyConnect Secure Mobility Client
 -- 0
 
@@ -135,7 +134,7 @@ if (notLeastFlag) then launcher({'cmd', 'ctrl'}, '8', 'Jasper') end
 -- d : 辞書
 -- f : 最大化
 -- g : Terminal
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'h', 'Firefox') end
+launcher({'cmd', 'ctrl'}, 'h', 'Firefox')
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
@@ -143,7 +142,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'e', 'Opera') end
+launcher({'cmd', 'ctrl'}, 'e', 'Opera')
 -- r : Calendar
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
@@ -154,13 +153,13 @@ remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 --   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
 -- end)
 launcher({'command', 'ctrl'}, 'o', 'System Preferences')
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code') end
+launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'x', 'Android Studio') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'v', 'Microsoft Outlook') end
-if (notLeastFlag) then launcher({'cmd', 'ctrl'}, 'b', 'Safari') end
+launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
+launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
+launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, 'v', 'Microsoft Outlook')
+launcher({'cmd', 'ctrl'}, 'b', 'Safari')
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 
@@ -201,7 +200,7 @@ remapKey({'alt'}, 'c', keyCode('delete', {'ctrl'}))
 remapKey({'alt'}, 'n', keyCode('pageup'))
 remapKey({'alt'}, 'm', keyCode('pagedown'))
 remapKey({'alt'}, ',', keyCode('a', {'cmd', 'shift'})) -- Zoomでミュートの切り替え
-if (notLeastFlag) then launcher({'alt'}, '.', 'zoom.us') end
+launcher({'alt'}, '.', 'zoom.us')
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
@@ -311,9 +310,9 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -- {'alt', 'shift'} 系
 
 -- q : QuickTime Player
-if (notLeastFlag) then launcher({'alt', 'shift'}, 'w', 'WeChat') end
-if (notLeastFlag) then launcher({'alt', 'shift'}, 'e', 'LINE') end
-if (notLeastFlag) then launcher({'alt', 'shift'}, 'r', 'AS Timer') end
+launcher({'alt', 'shift'}, 'w', 'WeChat')
+launcher({'alt', 'shift'}, 'e', 'LINE')
+launcher({'alt', 'shift'}, 'r', 'AS Timer')
 -- t : FileMerge
 -- y :
 -- u : emacsで大文字変換
