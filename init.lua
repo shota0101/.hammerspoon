@@ -149,10 +149,9 @@ launcher({'cmd', 'ctrl'}, 'e', 'Opera')
 -- u : BetterTouchTool
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
--- hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
---   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
--- end)
-launcher({'command', 'ctrl'}, 'o', 'System Preferences')
+hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
+  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
+end)
 launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 
 launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
