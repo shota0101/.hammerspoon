@@ -200,6 +200,8 @@ remapKey({'alt'}, 'c', keyCode('delete', {'ctrl'}))
 -- b
 remapKey({'alt'}, 'n', keyCode('pageup'))
 remapKey({'alt'}, 'm', keyCode('pagedown'))
+remapKey({'alt'}, ',', keyCode('a', {'cmd', 'shift'})) -- Zoomでミュートの切り替え
+if (notLeastFlag) then launcher({'alt'}, '.', 'zoom.us') end
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
@@ -251,7 +253,7 @@ remapKey({'cmd', 'shift'}, 'l', keyCode(']', {'cmd', 'shift'}))
 remapKey({'cmd', 'shift'}, ';', keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
 -- ' : 設定する場合は"\'" のようにスケープする
 
-if (notLeastFlag) then launcher({'cmd', 'shift'}, 'q', 'zoom.us') end
+-- q
 -- w
 -- e : Visual Studio Code -> View -> Exploror
 -- r : Chromeでキャッシュを消して更新など
