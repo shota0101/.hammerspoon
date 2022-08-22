@@ -76,6 +76,7 @@ end)
 hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 end)
+-- launcher({'cmd', 'ctrl'}, 'g', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'alt', 'shift'}, 'q', function()
