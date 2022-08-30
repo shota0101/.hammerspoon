@@ -184,7 +184,7 @@ remapKey({'alt'}, 'o', keyCode('end'))
 
 -- a
 -- s : emacsでmarkdownのキーバインド
-remapKey({'alt'}, 'd', keyCode('delete'))
+-- d : emacsのキーバインド
 -- f : Fuwari
 remapKey({'alt'}, 'g', keyCode('escape'))
 -- h
