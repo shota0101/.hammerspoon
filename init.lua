@@ -140,6 +140,7 @@ remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
+-- '
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
 -- w : Reminders
@@ -202,6 +203,8 @@ remapKey({'alt'}, 'm', keyCode('pagedown'))
 remapKey({'alt'}, ',', keyCode('a', {'cmd', 'shift'})) -- Zoomでミュートの切り替え
 launcher({'alt'}, '.', 'zoom.us')
 
+remapKey({'alt'}, 'pagedown', keyCode('up', {'alt', 'shift'})) -- Slackで次のチャンネル
+
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
 
@@ -249,7 +252,7 @@ remapKey({'alt', 'ctrl'}, 'm', keyCode('pagedown', {'shift'}))
 remapKey({'cmd', 'shift'}, 'j', keyCode('[', {'cmd', 'shift'}))
 remapKey({'cmd', 'shift'}, 'k', keyCode('pagedown'))
 remapKey({'cmd', 'shift'}, 'l', keyCode(']', {'cmd', 'shift'}))
-remapKey({'cmd', 'shift'}, ';', keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
+-- ;
 -- ' : 設定する場合は"\'" のようにスケープする
 
 -- q
