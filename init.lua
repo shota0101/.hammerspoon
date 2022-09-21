@@ -135,7 +135,7 @@ launcher({'cmd', 'ctrl'}, '8', 'Jasper')
 -- d : 辞書
 -- f : 最大化
 -- g : Terminal
-launcher({'cmd', 'ctrl'}, 'h', 'Firefox')
+launcher({'cmd', 'ctrl'}, 'h', 'Opera')
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
@@ -143,8 +143,8 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 -- '
 
 launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
+launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- w : Reminders
-launcher({'cmd', 'ctrl'}, 'e', 'Opera')
 -- r : Calendar
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
