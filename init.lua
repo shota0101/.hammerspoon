@@ -82,6 +82,7 @@ end)
 hs.hotkey.bind({'alt', 'shift'}, 'q', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
+launcher({'alt', 'shift'}, 'q', 'QuickTime Player')
 
 -- Preview.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
