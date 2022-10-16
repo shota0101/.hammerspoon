@@ -204,7 +204,8 @@ remapKey({'alt'}, 'm', keyCode('pagedown'))
 remapKey({'alt'}, ',', keyCode('a', {'cmd', 'shift'})) -- Zoomでミュートの切り替え
 launcher({'alt'}, '.', 'zoom.us')
 
-remapKey({'alt'}, 'pagedown', keyCode('up', {'alt', 'shift'})) -- Slackで次のチャンネル
+remapKey({'alt'}, 'pageup', keyCode('up', {'alt', 'shift'})) -- Slackで次のチャンネル
+remapKey({'alt'}, 'pagedown', keyCode('down', {'alt', 'shift'})) -- Slackで次のチャンネル
 
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
