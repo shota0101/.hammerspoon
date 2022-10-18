@@ -322,7 +322,7 @@ launcher({'alt', 'shift'}, 'r', 'AS Timer')
 -- y :
 -- u : emacsで大文字変換
 remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
--- o
+launcher({'alt', 'shift'}, 'o', 'Miro')
 -- p : 前のパラグラフの選択
 
 -- a : キーボード->アクセシビリティ->ズーム機能->縮小
