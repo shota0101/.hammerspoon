@@ -72,10 +72,11 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 'r', function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
 
--- Terminal.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
-  hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
-end)
+-- Terminal.app → iTermに変更
+-- hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
+--   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
+-- end)
+-- 環境が違う場合
 -- launcher({'cmd', 'ctrl'}, 'g', 'Utilities/Terminal')
 
 -- QuickTime Player.app
