@@ -174,7 +174,7 @@ remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 -------------------------------------------------------------------------------
 -- {'alt'}系
 
-remapKey({'alt'}, 'escape', keyCode('delete', {'command'})) -- 左手でFinderでファイルを削除
+remapKey({'alt'}, 'tab', keyCode('delete', {'command'})) -- 左手でFinderでファイルを削除
 remapKey({'alt'}, 'q', keyCode('F7'))
 remapKey({'alt'}, 'w', keyCode('F10'))
 -- e : emacs
