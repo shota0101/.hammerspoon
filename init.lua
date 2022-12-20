@@ -81,10 +81,10 @@ end)
 launcher({'cmd', 'ctrl'}, 'g', 'Utilities/Terminal')
 
 -- QuickTime Player.app
-hs.hotkey.bind({'alt', 'shift'}, 'q', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
-launcher({'alt', 'shift'}, 'q', 'QuickTime Player') -- Mojaveの場合
+launcher({'cmd', 'ctrl'}, 'q', 'QuickTime Player') -- Mojaveの場合
 
 -- Preview.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
@@ -144,7 +144,7 @@ remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 -- '
 
-launcher({'cmd', 'ctrl'}, 'q', 'Kindle')
+-- q : QuickTime Player
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- w : Reminders
 -- r : Calendar
@@ -317,7 +317,7 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -------------------------------------------------------------------------------
 -- {'alt', 'shift'} 系
 
--- q : QuickTime Player
+launcher({'alt', 'shift'}, 'q', 'Kindle')
 launcher({'alt', 'shift'}, 'w', 'WeChat')
 launcher({'alt', 'shift'}, 'e', 'LINE')
 launcher({'alt', 'shift'}, 'r', 'AS Timer')
