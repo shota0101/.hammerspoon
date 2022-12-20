@@ -66,24 +66,25 @@ end)
 hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
+launcher({'cmd', 'ctrl'}, 'w', 'Reminders') -- Mojaveの場合
 
 -- Calendar.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'r', function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
 
--- Terminal.app → iTermに変更
+-- Terminal.app
 -- hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
 --   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 -- end)
--- 環境が違う場合
--- launcher({'cmd', 'ctrl'}, 'g', 'Utilities/Terminal')
+-- 環境が古い場合
+launcher({'cmd', 'ctrl'}, 'g', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'alt', 'shift'}, 'q', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
--- launcher({'alt', 'shift'}, 'q', 'QuickTime Player') -- 新OSのMacならこのコメントアウトを外す
+launcher({'alt', 'shift'}, 'q', 'QuickTime Player') -- Mojaveの場合
 
 -- Preview.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
@@ -128,9 +129,8 @@ launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
 -- 6
 -- 7
 -- 8 : BetterTouchTool
-launcher({'cmd', 'ctrl'}, '8', 'Jasper')
 -- 9 : Cisco AnyConnect Secure Mobility Client
--- 0
+-- 0 : Sleep
 
 -- a : Preview
 -- s : Finder
@@ -156,6 +156,7 @@ remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
 end)
+launcher({'cmd', 'ctrl'}, 'o', 'System Preferences') -- Mojaveの場合
 launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 
 launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
