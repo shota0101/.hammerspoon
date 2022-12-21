@@ -144,7 +144,7 @@ remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
--- '
+-- ' : iTerm
 
 -- q : QuickTime Player
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
