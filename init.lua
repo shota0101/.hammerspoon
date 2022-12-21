@@ -72,6 +72,7 @@ launcher({'cmd', 'ctrl'}, 'w', 'Reminders') -- Mojaveの場合
 hs.hotkey.bind({'cmd', 'ctrl'}, 'r', function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
+launcher({'cmd', 'ctrl'}, 'r', 'Calendar') -- Mojaveの場合
 
 -- Terminal.app
 -- hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
