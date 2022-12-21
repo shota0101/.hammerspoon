@@ -69,10 +69,10 @@ end)
 launcher({'cmd', 'ctrl'}, 'w', 'Reminders') -- Mojaveの場合
 
 -- Calendar.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'r', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, "'", function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
-launcher({'cmd', 'ctrl'}, 'r', 'Calendar') -- Mojaveの場合
+launcher({'cmd', 'ctrl'}, "'", 'Calendar') -- Mojaveの場合
 
 -- Terminal.app
 -- hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
@@ -144,12 +144,12 @@ remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
--- ' : iTerm
+-- ' : Calendar
 
 -- q : QuickTime Player
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- w : Reminders
--- r : Calendar
+-- r : iTerm
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 -- u : BetterTouchTool
