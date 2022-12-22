@@ -150,6 +150,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- w : Reminders
 -- r : iTerm
+launcher({'cmd', 'ctrl'}, 't', 'AS Timer')
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 -- u : BetterTouchTool
@@ -319,10 +320,10 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -------------------------------------------------------------------------------
 -- {'alt', 'shift'} 系
 
-launcher({'alt', 'shift'}, 'q', 'Kindle')
+-- launcher({'alt', 'shift'}, 'q', 'Kindle')
 launcher({'alt', 'shift'}, 'w', 'WeChat')
 launcher({'alt', 'shift'}, 'e', 'LINE')
-launcher({'alt', 'shift'}, 'r', 'AS Timer')
+-- r
 -- t : FileMerge
 -- y :
 -- u : emacsで大文字変換
