@@ -75,11 +75,11 @@ end)
 launcher({'cmd', 'ctrl'}, "'", 'Calendar') -- Mojaveの場合
 
 -- Terminal.app
--- hs.hotkey.bind({'cmd', 'ctrl'}, 'g', function()
+-- hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
 --   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 -- end)
 -- 環境が古い場合
-launcher({'cmd', 'ctrl'}, 'g', 'Utilities/Terminal')
+launcher({'cmd', 'ctrl'}, 't', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
@@ -138,7 +138,7 @@ launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
 -- s : Finder
 -- d : 辞書
 -- f : 最大化
--- g : Terminal
+launcher({'cmd', 'ctrl'}, 'g', 'AS Timer')
 launcher({'cmd', 'ctrl'}, 'h', 'Opera')
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
@@ -150,7 +150,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- w : Reminders
 -- r : iTerm
-launcher({'cmd', 'ctrl'}, 't', 'AS Timer')
+-- t : Terminal
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 -- u : BetterTouchTool
