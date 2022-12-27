@@ -79,7 +79,7 @@ launcher({'cmd', 'ctrl'}, "'", 'Calendar') -- Mojaveの場合
 --   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 -- end)
 -- 環境が古い場合
-launcher({'cmd', 'ctrl'}, 't', 'Utilities/Terminal')
+-- launcher({'cmd', 'ctrl'}, 't', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
@@ -150,7 +150,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- w : Reminders
 -- r : iTerm
--- t : Terminal
+-- t : Terminal → Fuwari
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 -- u : BetterTouchTool
