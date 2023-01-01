@@ -325,7 +325,7 @@ launcher({'alt', 'shift'}, 'w', 'WeChat')
 launcher({'alt', 'shift'}, 'e', 'LINE')
 -- r
 -- t : FileMerge
--- y :
+launcher({'alt', 'shift'}, 'y', 'iTunes')
 -- u : emacsで大文字変換
 remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
 launcher({'alt', 'shift'}, 'o', 'Miro')
@@ -333,7 +333,7 @@ launcher({'alt', 'shift'}, 'o', 'Miro')
 
 -- a : キーボード->アクセシビリティ->ズーム機能->縮小
 launcher({'alt', 'shift'}, 's', 'Simplenote')
--- d
+-- d : emacsで単語を消す
 -- f : 次の単語を選択
 -- g : TextEdit.app
 -- h :
