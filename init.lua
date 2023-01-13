@@ -66,13 +66,11 @@ end)
 hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
-launcher({'cmd', 'ctrl'}, 'w', 'Reminders') -- Mojaveの場合
 
 -- Calendar.app
 hs.hotkey.bind({'cmd', 'ctrl'}, "'", function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
-launcher({'cmd', 'ctrl'}, "'", 'Calendar') -- Mojaveの場合
 
 -- Terminal.app
 -- hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
@@ -99,9 +97,9 @@ hs.hotkey.bind({'alt', 'shift'}, 'g', function()
 end)
 
 -- iTunes
--- hs.hotkey.bind({'alt', 'shift'}, 'i', function()
---   hs.application.launchOrFocus('/System/Applications/Music.app')
--- end)
+hs.hotkey.bind({'alt', 'shift'}, 'y', function()
+  hs.application.launchOrFocus('/System/Applications/Music.app')
+end)
 
 -- Simulator.app
 hs.hotkey.bind({'alt', 'ctrl'}, 'n', function()
@@ -159,7 +157,6 @@ remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
 end)
-launcher({'cmd', 'ctrl'}, 'o', 'System Preferences') -- Mojaveの場合
 launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 
 launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
@@ -325,7 +322,7 @@ launcher({'alt', 'shift'}, 'w', 'WeChat')
 launcher({'alt', 'shift'}, 'e', 'LINE')
 -- r
 -- t : FileMerge
-launcher({'alt', 'shift'}, 'y', 'iTunes')
+-- y : Music
 -- u : emacsで大文字変換
 remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
 launcher({'alt', 'shift'}, 'o', 'Miro')
