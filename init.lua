@@ -83,13 +83,11 @@ end)
 hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
-launcher({'cmd', 'ctrl'}, 'q', 'QuickTime Player') -- Mojaveの場合
 
 -- Preview.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
   hs.application.launchOrFocus('/System/Applications/Preview.app')
 end)
-launcher({'cmd', 'ctrl'}, 'a', 'Preview') -- Mojaveの場合
 
 -- TextEdit.app
 hs.hotkey.bind({'alt', 'shift'}, 'g', function()
