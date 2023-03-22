@@ -63,9 +63,9 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 's', function()
 end)
 
 -- Reminders.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
-  hs.application.launchOrFocus('/System/Applications/Reminders.app')
-end)
+-- hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
+--   hs.application.launchOrFocus('/System/Applications/Reminders.app')
+-- end)
 
 -- Calendar.app
 hs.hotkey.bind({'cmd', 'ctrl'}, "'", function()
@@ -116,7 +116,7 @@ end)
 
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
-   
+
 launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
 -- ` : ウィンドウの選択
 -- 1 : BetterTouchTool
@@ -144,7 +144,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 -- q : QuickTime Player
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
--- w : Reminders
+launcher({'cmd', 'ctrl'}, 'w', 'Microsoft To Do')
 -- r : iTerm
 -- t : Terminal → Fuwari
 -- t : Finderでファイルをサイドバーに追加
