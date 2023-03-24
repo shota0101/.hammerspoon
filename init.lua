@@ -63,9 +63,9 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 's', function()
 end)
 
 -- Reminders.app
--- hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
---   hs.application.launchOrFocus('/System/Applications/Reminders.app')
--- end)
+hs.hotkey.bind({'cmd', 'ctrl'}, 'v', function()
+  hs.application.launchOrFocus('/System/Applications/Reminders.app')
+end)
 
 -- Calendar.app
 hs.hotkey.bind({'cmd', 'ctrl'}, "'", function()
@@ -145,6 +145,7 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 -- q : QuickTime Player
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 launcher({'cmd', 'ctrl'}, 'w', 'Microsoft To Do')
+-- Microsoft Outlook
 -- r : iTerm
 -- t : Terminal → Fuwari
 -- t : Finderでファイルをサイドバーに追加
@@ -160,7 +161,7 @@ launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
 launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
 launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
-launcher({'cmd', 'ctrl'}, 'v', 'Microsoft Outlook')
+-- Reminders.app
 launcher({'cmd', 'ctrl'}, 'b', 'Safari')
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
