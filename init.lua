@@ -63,7 +63,7 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 's', function()
 end)
 
 -- Reminders.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'v', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
 
@@ -117,7 +117,8 @@ end)
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
 
-launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
+launcher({'cmd', 'ctrl'}, 'tab', 'LINE')
+-- launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
 -- ` : ウィンドウの選択
 -- 1 : BetterTouchTool
 -- 2 : BetterTouchTool
@@ -143,11 +144,11 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 -- ' : Calendar
 
 -- q : QuickTime Player
+-- w : Reminders
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
-launcher({'cmd', 'ctrl'}, 'w', 'Microsoft To Do')
 -- Microsoft Outlook
 -- r : iTerm
--- t : Terminal → Fuwari
+launcher({'cmd', 'ctrl'}, 't', 'Microsoft To Do')
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 -- u : BetterTouchTool
@@ -161,7 +162,7 @@ launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
 launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
 launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
--- Reminders.app
+-- v
 launcher({'cmd', 'ctrl'}, 'b', 'Safari')
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
@@ -189,7 +190,7 @@ remapKey({'alt'}, 'o', keyCode('end'))
 -- a
 -- s : emacsでmarkdownのキーバインド
 -- d : emacsのキーバインド
--- f : Fuwari
+-- f
 remapKey({'alt'}, 'g', keyCode('escape'))
 -- h
 remapKey({'alt'}, 'j', keyCode('left'))
@@ -318,7 +319,7 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 
 -- launcher({'alt', 'shift'}, 'q', 'Kindle')
 launcher({'alt', 'shift'}, 'w', 'WeChat')
-launcher({'alt', 'shift'}, 'e', 'LINE')
+-- e
 -- r
 -- t : FileMerge
 -- y : Music
