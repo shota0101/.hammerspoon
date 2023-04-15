@@ -162,7 +162,7 @@ launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
 launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
 launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
--- v
+launcher({'cmd', 'ctrl'}, 'v', 'WeChat')
 launcher({'cmd', 'ctrl'}, 'b', 'Safari')
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
@@ -318,7 +318,7 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -- {'alt', 'shift'} 系
 
 -- launcher({'alt', 'shift'}, 'q', 'Kindle')
-launcher({'alt', 'shift'}, 'w', 'WeChat')
+-- w
 -- e
 -- r
 -- t : FileMerge
