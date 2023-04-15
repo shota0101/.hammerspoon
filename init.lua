@@ -145,8 +145,8 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 -- q : QuickTime Player
 -- w : Reminders
+-- launcher({'cmd', 'ctrl'}, 'w', 'Microsoft Outlook')
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
--- Microsoft Outlook
 -- r : iTerm
 launcher({'cmd', 'ctrl'}, 't', 'Microsoft To Do')
 -- t : Finderでファイルをサイドバーに追加
