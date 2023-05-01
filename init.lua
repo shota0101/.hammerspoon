@@ -95,7 +95,8 @@ hs.hotkey.bind({'alt', 'shift'}, 'g', function()
 end)
 
 -- iTunes
-hs.hotkey.bind({'alt', 'shift'}, 'y', function()
+-- hs.hotkey.bind({'alt', 'shift'}, 'y', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'z', function()
   hs.application.launchOrFocus('/System/Applications/Music.app')
 end)
 
@@ -145,10 +146,10 @@ launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
 
 -- q : QuickTime Player
 -- w : Reminders
--- launcher({'cmd', 'ctrl'}, 'w', 'Microsoft Outlook')
 launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
 -- r : iTerm
 launcher({'cmd', 'ctrl'}, 't', 'Microsoft To Do')
+-- launcher({'cmd', 'ctrl'}, 't', 'Microsoft Outlook')
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 -- u : BetterTouchTool
@@ -159,11 +160,12 @@ hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
 end)
 launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 
-launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
-launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
+-- iTunes
+-- launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
+-- launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
 launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
 launcher({'cmd', 'ctrl'}, 'v', 'WeChat')
-launcher({'cmd', 'ctrl'}, 'b', 'Safari')
+-- launcher({'cmd', 'ctrl'}, 'b', 'Safari')
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 
@@ -187,10 +189,10 @@ remapKey({'alt'}, 'i', keyCode('up'))
 remapKey({'alt'}, 'o', keyCode('end'))
 -- p
 
--- a
+remapKey({'alt'}, 'a', keyCode('pageup'))
 -- s : emacsでmarkdownのキーバインド
 -- d : emacsのキーバインド
--- f
+remapKey({'alt'}, 'f', keyCode('pagedown'))
 remapKey({'alt'}, 'g', keyCode('escape'))
 -- h
 remapKey({'alt'}, 'j', keyCode('left'))
