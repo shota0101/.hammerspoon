@@ -177,8 +177,8 @@ remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
 -------------------------------------------------------------------------------
 -- {'alt'}系
 
-remapKey({'alt'}, 'tab', keyCode('delete', {'command'})) -- 左手でFinderでファイルを削除
-remapKey({'alt'}, 'q', keyCode('pageup'))
+remapKey({'alt'}, 'tab', keyCode('pageup'))
+remapKey({'alt'}, 'q', keyCode('pagedown'))
 -- w : emacsのキーバインドと衝突（2画面にしたときの上画面への移動）
 -- e : emacs
 remapKey({'alt'}, 'r', keyCode('return'))
@@ -192,7 +192,7 @@ remapKey({'alt'}, 'o', keyCode('end'))
 -- a : emacsのキーバインドと衝突（2画面にしたときの左画面への移動）
 -- s : emacsでmarkdownのキーバインド
 -- d : emacsのキーバインド
-remapKey({'alt'}, 'f', keyCode('pagedown'))
+-- f
 remapKey({'alt'}, 'g', keyCode('escape'))
 -- h
 remapKey({'alt'}, 'j', keyCode('left'))
