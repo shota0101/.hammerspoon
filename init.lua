@@ -127,7 +127,7 @@ launcher({'cmd', 'ctrl'}, 'tab', 'WeChat')
 -- 4 : BetterTouchTool
 -- 5
 -- 6
--- 7
+-- 7 : Terminal
 -- 8 : BetterTouchTool
 -- 9 : Cisco AnyConnect Secure Mobility Client
 -- 0 : Sleep
