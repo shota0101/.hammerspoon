@@ -73,11 +73,11 @@ hs.hotkey.bind({'cmd', 'ctrl'}, "'", function()
 end)
 
 -- Terminal.app
--- hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
---   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
--- end)
+hs.hotkey.bind({'cmd', 'ctrl'}, '7', function()
+  hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
+end)
 -- 環境が古い場合
--- launcher({'cmd', 'ctrl'}, 't', 'Utilities/Terminal')
+-- launcher({'cmd', 'ctrl'}, '7', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
