@@ -118,7 +118,7 @@ end)
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
 
-launcher({'cmd', 'ctrl'}, 'tab', 'LINE')
+launcher({'cmd', 'ctrl'}, 'tab', 'WeChat')
 -- launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
 -- ` : ウィンドウの選択
 -- 1 : BetterTouchTool
@@ -164,7 +164,7 @@ launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 -- launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
 -- launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
 launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
-launcher({'cmd', 'ctrl'}, 'v', 'WeChat')
+launcher({'cmd', 'ctrl'}, 'b', 'LINE')
 -- launcher({'cmd', 'ctrl'}, 'b', 'Safari')
 remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
 remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
