@@ -192,7 +192,7 @@ remapKey({'alt'}, 'o', keyCode('end'))
 -- a : emacsのキーバインドと衝突（2画面にしたときの左画面への移動）
 -- s : emacsでmarkdownのキーバインド
 -- d : emacsのキーバインド
--- f
+remapKey({'alt'}, 'f', keyCode('pagedown'))
 remapKey({'alt'}, 'g', keyCode('escape'))
 -- h
 remapKey({'alt'}, 'j', keyCode('left'))
