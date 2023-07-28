@@ -98,34 +98,34 @@ appsWatcher:start()
 -- アプリごとの設定
 
 -- Finder.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 's', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
 -- Reminders.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'w', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'c', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
 
 -- Calendar.app
-hs.hotkey.bind({'cmd', 'ctrl'}, "'", function()
+hs.hotkey.bind({'cmd', 'ctrl'}, ",", function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
 
 -- Terminal.app
-hs.hotkey.bind({'cmd', 'ctrl'}, '7', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, '0', function()
   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 end)
 -- 環境が古い場合
--- launcher({'cmd', 'ctrl'}, '7', 'Utilities/Terminal')
+-- launcher({'cmd', 'ctrl'}, '0', 'Utilities/Terminal')
 
 -- QuickTime Player.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'm', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
 
 -- Preview.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.application.launchOrFocus('/System/Applications/Preview.app')
 end)
 
@@ -135,8 +135,7 @@ hs.hotkey.bind({'alt', 'shift'}, 'g', function()
 end)
 
 -- iTunes
--- hs.hotkey.bind({'alt', 'shift'}, 'y', function()
-hs.hotkey.bind({'cmd', 'ctrl'}, 'z', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'b', function()
   hs.application.launchOrFocus('/System/Applications/Music.app')
 end)
 
@@ -151,64 +150,59 @@ hs.hotkey.bind({'alt', 'shift'}, 't', function()
 end)
 
 -- VPN
-hs.hotkey.bind({'cmd', 'ctrl'}, '9', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'z', function()
   hs.application.launchOrFocus('/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app')
 end)
 
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
 
-launcher({'cmd', 'ctrl'}, 'tab', 'WeChat')
--- launcher({'cmd', 'ctrl'}, 'tab', 'Slack')
--- ` : ウィンドウの選択
--- 1 : BetterTouchTool
--- 2 : BetterTouchTool
--- 3 : BetterTouchTool
--- 4 : BetterTouchTool
--- 5
--- 6
--- 7 : Terminal
--- 8 : BetterTouchTool
--- 9 : Cisco AnyConnect Secure Mobility Client
--- 0 : Sleep
 
--- a : Preview
--- s : Finder
+-- ` : ウィンドウの選択
+-- 1 : iTerm
+launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, '3', 'Opera')
+launcher({'cmd', 'ctrl'}, '4', 'Firefox')
+launcher({'cmd', 'ctrl'}, '5', 'Safari')
+launcher({'cmd', 'ctrl'}, '6', 'Brave Browser')
+
+remapKey({'cmd', 'ctrl'}, 'a', keyCode('pageup'))
+remapKey({'cmd', 'ctrl'}, 's', keyCode('pagedown'))
 -- d : 辞書
 -- f : 最大化
-launcher({'cmd', 'ctrl'}, 'g', 'AS Timer')
+hs.hotkey.bind({'command', 'ctrl'}, 'g', function()
+  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
+end)
 -- h
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
-launcher({'cmd', 'ctrl'}, ';', 'KeePassX')
--- ' : Calendar
+-- ; : Rectangle
 
--- q : QuickTime Player
--- w : Reminders
-launcher({'cmd', 'ctrl'}, 'e', 'Firefox')
--- r : iTerm
-launcher({'cmd', 'ctrl'}, 't', 'Microsoft To Do')
--- launcher({'cmd', 'ctrl'}, 't', 'Microsoft Outlook')
+launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
+-- q : Finder
+launcher({'cmd', 'ctrl'}, 'w', 'AS Timer')
+-- e : Rectangle
+-- r : Rectangle
+-- t : Preview
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
--- u : BetterTouchTool
+launcher({'cmd', 'ctrl'}, 'u', 'Android Studio')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
-hs.hotkey.bind({'command', 'ctrl'}, 'o', function()
-  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
-end)
-launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
+launcher({'cmd', 'ctrl'}, 'o', 'Visual Studio Code')
+launcher({'cmd', 'ctrl'}, 'p', 'IntelliJ IDEA CE')
 
--- z : iTunes
--- launcher({'cmd', 'ctrl'}, 'z', 'IntelliJ IDEA CE')
--- launcher({'cmd', 'ctrl'}, 'x', 'Android Studio')
-launcher({'cmd', 'ctrl'}, 'x', 'Opera')
-launcher({'cmd', 'ctrl'}, 'c', 'Google Chrome')
-launcher({'cmd', 'ctrl'}, 'b', 'LINE')
--- launcher({'cmd', 'ctrl'}, 'b', 'Safari')
-remapKey({'cmd', 'ctrl'}, 'n', keyCode('pageup'))
-remapKey({'cmd', 'ctrl'}, 'm', keyCode('pagedown'))
+launcher({'cmd', 'ctrl'}, 'z', 'LINE')
+-- z : Cisco AnyConnect Secure Mobility Client
+launcher({'cmd', 'ctrl'}, 'x', 'WeChat')
+-- launcher({'cmd', 'ctrl'}, 'x', 'Slack')
+-- c : Reminders
+launcher({'cmd', 'ctrl'}, 'v', 'Microsoft To Do')
+-- b : iTunes
+launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
+-- m : QuickTime Player
+-- , : Calendar
 
 -------------------------------------------------------------------------------
 -- {'ctrl'}系
@@ -365,14 +359,14 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -- e
 -- r
 -- t : FileMerge
--- y : Music
+-- y
 -- u : emacsで大文字変換
 remapKey({'alt', 'shift'}, 'i', keyCode('up', {'alt'}))
 launcher({'alt', 'shift'}, 'o', 'Miro')
 -- p : 前のパラグラフの選択
 
 -- a : キーボード->アクセシビリティ->ズーム機能->縮小
-launcher({'alt', 'shift'}, 's', 'Simplenote')
+-- s
 -- d : emacsで単語を消す
 -- f : 次の単語を選択
 -- g : TextEdit.app
