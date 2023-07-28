@@ -103,12 +103,12 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
 end)
 
 -- Reminders.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'c', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
 
 -- Calendar.app
-hs.hotkey.bind({'cmd', 'ctrl'}, ",", function()
+hs.hotkey.bind({'cmd', 'ctrl'}, "b", function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
 
@@ -120,12 +120,12 @@ end)
 -- launcher({'cmd', 'ctrl'}, '0', 'Utilities/Terminal')
 
 -- QuickTime Player.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'm', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'v', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
 
 -- Preview.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'c', function()
   hs.application.launchOrFocus('/System/Applications/Preview.app')
 end)
 
@@ -135,7 +135,7 @@ hs.hotkey.bind({'alt', 'shift'}, 'g', function()
 end)
 
 -- iTunes
-hs.hotkey.bind({'cmd', 'ctrl'}, 'b', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.application.launchOrFocus('/System/Applications/Music.app')
 end)
 
@@ -166,8 +166,8 @@ launcher({'cmd', 'ctrl'}, '4', 'Firefox')
 launcher({'cmd', 'ctrl'}, '5', 'Safari')
 launcher({'cmd', 'ctrl'}, '6', 'Brave Browser')
 
-remapKey({'cmd', 'ctrl'}, 'a', keyCode('pageup'))
-remapKey({'cmd', 'ctrl'}, 's', keyCode('pagedown'))
+-- a : Reminders
+launcher({'cmd', 'ctrl'}, 's', 'Microsoft To Do')
 -- d : 辞書
 -- f : 最大化
 hs.hotkey.bind({'command', 'ctrl'}, 'g', function()
@@ -184,7 +184,7 @@ launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
 launcher({'cmd', 'ctrl'}, 'w', 'AS Timer')
 -- e : Rectangle
 -- r : Rectangle
--- t : Preview
+-- t : iTunes
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
 launcher({'cmd', 'ctrl'}, 'u', 'Android Studio')
@@ -197,12 +197,11 @@ launcher({'cmd', 'ctrl'}, 'z', 'LINE')
 -- z : Cisco AnyConnect Secure Mobility Client
 launcher({'cmd', 'ctrl'}, 'x', 'WeChat')
 -- launcher({'cmd', 'ctrl'}, 'x', 'Slack')
--- c : Reminders
-launcher({'cmd', 'ctrl'}, 'v', 'Microsoft To Do')
--- b : iTunes
+-- c : Preview
+-- v : QuickTime Player
+-- b : Calendar
 launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
--- m : QuickTime Player
--- , : Calendar
+launcher({'cmd', 'ctrl'}, 'm', 'Kindle')
 
 -------------------------------------------------------------------------------
 -- {'ctrl'}系
@@ -354,7 +353,7 @@ launcher({'cmd', 'shift'}, 'x', 'Helium')
 -------------------------------------------------------------------------------
 -- {'alt', 'shift'} 系
 
--- launcher({'alt', 'shift'}, 'q', 'Kindle')
+-- q
 -- w
 -- e
 -- r
