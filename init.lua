@@ -226,20 +226,20 @@ remapKey({'alt'}, 'o', keyCode('end'))
 -- a : emacsのキーバインドと衝突（2画面にしたときの左画面への移動）
 -- s : emacsでmarkdownのキーバインド
 -- d : emacsのキーバインド
-remapKey({'alt'}, 'f', keyCode('pagedown'))
-remapKey({'alt'}, 'g', keyCode('escape'))
+remapKey({'alt'}, 'f', keyCode('down'))
+remapKey({'alt'}, 'g', keyCode('right'))
 -- h
 remapKey({'alt'}, 'j', keyCode('left'))
 remapKey({'alt'}, 'k', keyCode('down'))
 remapKey({'alt'}, 'l', keyCode('right'))
 
--- z
--- x
-remapKey({'alt'}, 'c', keyCode('delete', {'ctrl'}))
--- v
+remapKey({'alt'}, 'z', keyCode('escape'))
+-- x : emacsのコマンド検索
+-- c : emacsでキャメルケース
+-- v : emacsのページング
 -- b
-remapKey({'alt'}, 'n', keyCode('pageup'))
-remapKey({'alt'}, 'm', keyCode('pagedown'))
+-- n
+-- m
 remapKey({'alt'}, ',', keyCode('a', {'cmd', 'shift'})) -- Zoomでミュートの切り替え
 launcher({'alt'}, '.', 'zoom.us')
 
@@ -249,9 +249,10 @@ remapKey({'alt'}, 'pagedown', keyCode('down', {'alt', 'shift'})) -- Slackで次�
 -------------------------------------------------------------------------------
 -- {'alt', 'ctrl'}系
 
--- q
--- w
--- e
+-- tab : dictation
+remapKey({'alt', 'ctrl'}, 'q', keyCode('home'))
+remapKey({'alt', 'ctrl'}, 'w', keyCode('up'))
+remapKey({'alt', 'ctrl'}, 'e', keyCode('end'))
 -- r
 -- t
 -- y
@@ -260,9 +261,9 @@ remapKey({'alt', 'ctrl'}, 'i', keyCode('up', {'shift'}))
 remapKey({'alt', 'ctrl'}, 'o', keyCode('end', {'shift'}))
 -- p
 
--- a
--- s
--- d
+remapKey({'alt', 'ctrl'}, 'a', keyCode('left'))
+remapKey({'alt', 'ctrl'}, 's', keyCode('down'))
+remapKey({'alt', 'ctrl'}, 'd', keyCode('right'))
 -- f
 -- g
 -- h
