@@ -188,20 +188,21 @@ launcher({'cmd', 'ctrl'}, 'w', 'AS Timer')
 -- t : iTunes
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
-launcher({'cmd', 'ctrl'}, 'u', 'Android Studio')
+-- launcher({'cmd', 'ctrl'}, 'u', 'Android Studio')
+launcher({'cmd', 'ctrl'}, 'u', 'OpenEmu')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
 launcher({'cmd', 'ctrl'}, 'o', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, 'p', 'IntelliJ IDEA CE')
 
-launcher({'cmd', 'ctrl'}, 'z', 'LINE')
+launcher({'cmd', 'ctrl'}, 'z', 'Simplenote')
 -- z : Cisco AnyConnect Secure Mobility Client
 launcher({'cmd', 'ctrl'}, 'x', 'WeChat')
 -- launcher({'cmd', 'ctrl'}, 'x', 'Slack')
 -- c : Preview
 -- v : QuickTime Player
 -- b : Calendar
-launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
+launcher({'cmd', 'ctrl'}, 'n', 'LINE')
 launcher({'cmd', 'ctrl'}, 'm', 'Kindle')
 
 -------------------------------------------------------------------------------
