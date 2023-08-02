@@ -162,9 +162,10 @@ end)
 -- 1 : iTerm
 launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
 launcher({'cmd', 'ctrl'}, '3', 'Opera')
-launcher({'cmd', 'ctrl'}, '4', 'Firefox')
-launcher({'cmd', 'ctrl'}, '5', 'Safari')
-launcher({'cmd', 'ctrl'}, '6', 'Brave Browser')
+launcher({'cmd', 'ctrl'}, '4', 'Brave Browser')
+launcher({'cmd', 'ctrl'}, '5', 'Helium')
+launcher({'cmd', 'ctrl'}, '6', 'Firefox')
+launcher({'cmd', 'ctrl'}, '7', 'Safari')
 
 -- a : Reminders
 launcher({'cmd', 'ctrl'}, 's', 'Microsoft To Do')
@@ -310,7 +311,7 @@ remapKey({'cmd', 'shift'}, 'i', keyCode('pageup'))
 -- p : Visual Studio Codeでコマンドパレットを開く
 
 -- z : ⌘zを戻す
-launcher({'cmd', 'shift'}, 'x', 'Helium')
+-- x
 -- c
 -- v
 -- b : Chromeでブックマークバーの表示・非表示を切り替え
