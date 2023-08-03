@@ -161,11 +161,12 @@ end)
 -- ` : ウィンドウの選択
 -- 1 : iTerm
 launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
-launcher({'cmd', 'ctrl'}, '3', 'Opera')
-launcher({'cmd', 'ctrl'}, '4', 'Brave Browser')
+launcher({'cmd', 'ctrl'}, '3', 'Vivaldi')
+launcher({'cmd', 'ctrl'}, '4', 'Opera')
 launcher({'cmd', 'ctrl'}, '5', 'Helium')
-launcher({'cmd', 'ctrl'}, '6', 'Firefox')
+launcher({'cmd', 'ctrl'}, '6', 'Brave Browser')
 launcher({'cmd', 'ctrl'}, '7', 'Safari')
+launcher({'cmd', 'ctrl'}, '8', 'Firefox')
 
 -- a : Reminders
 launcher({'cmd', 'ctrl'}, 's', 'Microsoft To Do')
