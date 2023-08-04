@@ -204,7 +204,7 @@ launcher({'cmd', 'ctrl'}, 'x', 'WeChat')
 -- v : QuickTime Player
 -- b : Calendar
 launcher({'cmd', 'ctrl'}, 'n', 'LINE')
-launcher({'cmd', 'ctrl'}, 'm', 'Kindle')
+-- launcher({'cmd', 'ctrl'}, 'm', 'Kindle')
 
 -------------------------------------------------------------------------------
 -- {'ctrl'}系
