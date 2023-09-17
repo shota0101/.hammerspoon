@@ -102,6 +102,12 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
+-- System Preferences
+hs.hotkey.bind({'command', 'ctrl'}, 'g', function()
+  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
+end)
+-- launcher({'cmd', 'ctrl'}, 'g', 'System Preferences')
+
 -- Reminders.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
@@ -171,9 +177,7 @@ launcher({'cmd', 'ctrl'}, '8', 'Safari')
 launcher({'cmd', 'ctrl'}, 's', 'Microsoft To Do')
 -- d : 辞書
 -- f : 最大化
-hs.hotkey.bind({'command', 'ctrl'}, 'g', function()
-  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
-end)
+-- g : System Preferences
 -- h
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
