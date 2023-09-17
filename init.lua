@@ -106,44 +106,49 @@ end)
 hs.hotkey.bind({'command', 'ctrl'}, 'g', function()
   hs.application.launchOrFocus('/System/Applications/System Preferences.app')
 end)
--- launcher({'cmd', 'ctrl'}, 'g', 'System Preferences')
+launcher({'cmd', 'ctrl'}, 'g', 'System Preferences')
 
 -- Reminders.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
+launcher({'cmd', 'ctrl'}, 'a', 'Reminders')
 
 -- Calendar.app
 hs.hotkey.bind({'cmd', 'ctrl'}, "b", function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
+launcher({'cmd', 'ctrl'}, 'b', 'Calendar')
 
 -- Terminal.app
 hs.hotkey.bind({'cmd', 'ctrl'}, '0', function()
   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 end)
--- 環境が古い場合
--- launcher({'cmd', 'ctrl'}, '0', 'Utilities/Terminal')
+launcher({'cmd', 'ctrl'}, '0', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'v', function()
   hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
 end)
+launcher({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
 
 -- Preview.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'c', function()
   hs.application.launchOrFocus('/System/Applications/Preview.app')
 end)
+launcher({'cmd', 'ctrl'}, 'c', 'Preview')
 
 -- TextEdit.app
 hs.hotkey.bind({'alt', 'shift'}, 'g', function()
   hs.application.launchOrFocus('/System/Applications/TextEdit.app')
 end)
+launcher({'alt', 'shift'}, 'g', 'TextEdit')
 
 -- iTunes
 hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.application.launchOrFocus('/System/Applications/Music.app')
 end)
+launcher({'cmd', 'ctrl'}, 't', 'iTunes')
 
 -- Simulator.app
 hs.hotkey.bind({'alt', 'ctrl'}, 'n', function()
