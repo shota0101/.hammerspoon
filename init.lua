@@ -109,22 +109,22 @@ end)
 launcher({'cmd', 'ctrl'}, 'g', 'System Preferences')
 
 -- Reminders.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'x', function()
   hs.application.launchOrFocus('/System/Applications/Reminders.app')
 end)
-launcher({'cmd', 'ctrl'}, 'a', 'Reminders')
+launcher({'cmd', 'ctrl'}, 'x', 'Reminders')
 
 -- Calendar.app
-hs.hotkey.bind({'cmd', 'ctrl'}, "b", function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 'b', function()
   hs.application.launchOrFocus('/System/Applications/Calendar.app')
 end)
 launcher({'cmd', 'ctrl'}, 'b', 'Calendar')
 
 -- Terminal.app
-hs.hotkey.bind({'cmd', 'ctrl'}, '0', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, '1', function()
   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 end)
-launcher({'cmd', 'ctrl'}, '0', 'Utilities/Terminal')
+launcher({'cmd', 'ctrl'}, '1', 'Utilities/Terminal')
 
 -- QuickTime Player.app
 hs.hotkey.bind({'cmd', 'ctrl'}, 'v', function()
@@ -169,17 +169,18 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
--- 1 : iTerm
-launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
-launcher({'cmd', 'ctrl'}, '3', 'Vivaldi')
-launcher({'cmd', 'ctrl'}, '4', 'Firefox')
+-- 1 : Terminal
+launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
+launcher({'cmd', 'ctrl'}, '3', 'AS Timer')
+launcher({'cmd', 'ctrl'}, '4', 'Safari')
 launcher({'cmd', 'ctrl'}, '5', 'Opera')
-launcher({'cmd', 'ctrl'}, '6', 'Helium')
-launcher({'cmd', 'ctrl'}, '7', 'Brave Browser')
-launcher({'cmd', 'ctrl'}, '8', 'Safari')
+launcher({'cmd', 'ctrl'}, '6', 'Brave Browser')
+launcher({'cmd', 'ctrl'}, '7', 'Firefox')
+launcher({'cmd', 'ctrl'}, '9', 'Kindle')
+launcher({'cmd', 'ctrl'}, '0', 'Helium')
 
--- a : Reminders
-launcher({'cmd', 'ctrl'}, 's', 'Microsoft To Do')
+launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
+launcher({'cmd', 'ctrl'}, 's', 'Google Chrome')
 -- d : 辞書
 -- f : 最大化
 -- g : System Preferences
@@ -191,28 +192,29 @@ remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 
 launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
 -- q : Finder
-launcher({'cmd', 'ctrl'}, 'w', 'AS Timer')
+-- w : iTerm
 -- e : Rectangle
 -- r : Rectangle
 -- t : iTunes
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
--- launcher({'cmd', 'ctrl'}, 'u', 'Android Studio')
 launcher({'cmd', 'ctrl'}, 'u', 'OpenEmu')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
-launcher({'cmd', 'ctrl'}, 'o', 'Visual Studio Code')
-launcher({'cmd', 'ctrl'}, 'p', 'IntelliJ IDEA CE')
+launcher({'cmd', 'ctrl'}, 'o', 'IntelliJ IDEA CE')
+launcher({'cmd', 'ctrl'}, 'p', 'LINE')
 
-launcher({'cmd', 'ctrl'}, 'z', 'Simplenote')
--- z : Cisco AnyConnect Secure Mobility Client
-launcher({'cmd', 'ctrl'}, 'x', 'WeChat')
--- launcher({'cmd', 'ctrl'}, 'x', 'Slack')
+launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
+-- launcher({'cmd', 'ctrl'}, 'z', 'Slack')
+-- x : Reminders
 -- c : Preview
 -- v : QuickTime Player
 -- b : Calendar
-launcher({'cmd', 'ctrl'}, 'n', 'LINE')
--- launcher({'cmd', 'ctrl'}, 'm', 'Kindle')
+launcher({'cmd', 'ctrl'}, 'n', 'Microsoft To Do')
+launcher({'cmd', 'ctrl'}, 'm', 'Simplenote')
+
+-- Android Studio
+-- Cisco AnyConnect Secure Mobility Client
 
 -------------------------------------------------------------------------------
 -- {'ctrl'}系
