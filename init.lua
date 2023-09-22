@@ -84,10 +84,9 @@ local function launcher(mods, key, appname)
   end)
 end
 
-local function launcher2(mods, key, appname1, appname2)
+local function launcherChromeApp(mods, key, appname)
   hs.hotkey.bind(mods, key, function()
-    hs.application.launchOrFocus('/Applications/' .. appname1 .. '.app')
-    hs.application.launchOrFocus('/Applications/' .. appname2 .. '.app')
+    hs.application.launchOrFocus('/Users/lin/Applications/Chrome Apps.localized/' .. appname .. '.app')
   end)
 end
 
