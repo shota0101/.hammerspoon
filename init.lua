@@ -170,12 +170,15 @@ end)
 
 -- ` : ウィンドウの選択
 -- 1 : Terminal
+launcher({'cmd', 'ctrl'}, '1', 'Drive')
 launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
+launcher({'cmd', 'ctrl'}, '2', 'Keep')
 launcher({'cmd', 'ctrl'}, '3', 'AS Timer')
-launcher({'cmd', 'ctrl'}, '4', 'Safari')
-launcher({'cmd', 'ctrl'}, '5', 'Opera')
-launcher({'cmd', 'ctrl'}, '6', 'Brave Browser')
-launcher({'cmd', 'ctrl'}, '7', 'Firefox')
+launcher({'cmd', 'ctrl'}, '4', 'YouTube')
+launcher({'cmd', 'ctrl'}, '5', 'Safari')
+launcher({'cmd', 'ctrl'}, '6', 'Opera')
+launcher({'cmd', 'ctrl'}, '7', 'Brave Browser')
+launcher({'cmd', 'ctrl'}, '8', 'Firefox')
 launcher({'cmd', 'ctrl'}, '9', 'Kindle')
 launcher({'cmd', 'ctrl'}, '0', 'Helium')
 
