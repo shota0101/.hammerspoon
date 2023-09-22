@@ -169,12 +169,11 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
--- 1 : Terminal
-launcher({'cmd', 'ctrl'}, '1', 'Drive')
+launcher({'cmd', 'ctrl'}, '1', 'AS Timer')
 launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, '2', 'Keep')
-launcher({'cmd', 'ctrl'}, '3', 'AS Timer')
-launcher({'cmd', 'ctrl'}, '4', 'YouTube')
+launcher({'cmd', 'ctrl'}, '3', 'YouTube')
+launcher({'cmd', 'ctrl'}, '4', 'Drive')
 launcher({'cmd', 'ctrl'}, '5', 'Safari')
 launcher({'cmd', 'ctrl'}, '6', 'Opera')
 launcher({'cmd', 'ctrl'}, '7', 'Brave Browser')
