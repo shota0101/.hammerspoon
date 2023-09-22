@@ -17,29 +17,6 @@ local function remapKey(modifiers, key, keyCode)
    hs.hotkey.bind(modifiers, key, keyCode, nil, keyCode)
 end
 
-local function disableAllHotkeys()
-   for k, v in pairs(hs.hotkey.getHotkeys()) do
-      v['_hk']:disable()
-   end
-end
-
-local function enableAllHotkeys()
-   for k, v in pairs(hs.hotkey.getHotkeys()) do
-      v['_hk']:enable()
-   end
-end
-
-local function handleGlobalAppEvent(name, event, app)
-   if event == hs.application.watcher.activated then
-      -- hs.alert.show(name)
-      if name ~= "iTerm2" then
-         enableAllHotkeys()
-      else
-         disableAllHotkeys()
-      end
-   end
-end
-
 local function launcher(mods, key, appname)
   hs.hotkey.bind(mods, key, function()
     hs.application.launchOrFocus('/Applications/' .. appname .. '.app')
@@ -61,9 +38,6 @@ local function launcherNew(mods, key, appname)
     launcher(mods, key, appname)
   end
 end
-
-appsWatcher = hs.application.watcher.new(handleGlobalAppEvent)
-appsWatcher:start()
 
 -------------------------------------------------------------------------------
 -- アプリごとの設定
