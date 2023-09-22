@@ -103,7 +103,7 @@ remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 
 launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
 -- q : Finder
--- w : iTerm
+launcher({'cmd', 'ctrl'}, 'w', 'iTerm')
 -- e : Rectangle
 -- r : Rectangle
 -- t : iTunes
