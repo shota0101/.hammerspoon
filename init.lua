@@ -90,6 +90,16 @@ local function launcherChromeApp(mods, key, appname)
   end)
 end
 
+local function launcherNew(mods, key, appname)
+  if (isNewSystem) then
+    hs.hotkey.bind(mods, key, function()
+      hs.application.launchOrFocus('/System/Applications/' .. appname .. '.app')
+    end)
+  else
+    launcher(mods, key, appname)
+  end
+end
+
 appsWatcher = hs.application.watcher.new(handleGlobalAppEvent)
 appsWatcher:start()
 
@@ -101,47 +111,11 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
--- System Preferences
-hs.hotkey.bind({'command', 'ctrl'}, 'g', function()
-  hs.application.launchOrFocus('/System/Applications/System Preferences.app')
-end)
-launcher({'cmd', 'ctrl'}, 'g', 'System Preferences')
-
--- Reminders.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'x', function()
-  hs.application.launchOrFocus('/System/Applications/Reminders.app')
-end)
-launcher({'cmd', 'ctrl'}, 'x', 'Reminders')
-
--- Calendar.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'b', function()
-  hs.application.launchOrFocus('/System/Applications/Calendar.app')
-end)
-launcher({'cmd', 'ctrl'}, 'b', 'Calendar')
-
 -- Terminal.app
 hs.hotkey.bind({'cmd', 'ctrl'}, '1', function()
   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
 end)
 launcher({'cmd', 'ctrl'}, '1', 'Utilities/Terminal')
-
--- QuickTime Player.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'v', function()
-  hs.application.launchOrFocus('/System/Applications/QuickTime Player.app')
-end)
-launcher({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
-
--- Preview.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'c', function()
-  hs.application.launchOrFocus('/System/Applications/Preview.app')
-end)
-launcher({'cmd', 'ctrl'}, 'c', 'Preview')
-
--- TextEdit.app
-hs.hotkey.bind({'alt', 'shift'}, 'g', function()
-  hs.application.launchOrFocus('/System/Applications/TextEdit.app')
-end)
-launcher({'alt', 'shift'}, 'g', 'TextEdit')
 
 -- iTunes
 hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
@@ -184,7 +158,7 @@ launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
 launcher({'cmd', 'ctrl'}, 's', 'Google Chrome')
 -- d : 辞書
 -- f : 最大化
--- g : System Preferences
+launcherNew({'cmd', 'ctrl'}, 'g', 'System Preferences')
 -- h
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
@@ -205,16 +179,16 @@ remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, 'o', 'IntelliJ IDEA CE')
 launcher({'cmd', 'ctrl'}, 'p', 'LINE')
 
+launcher({'cmd', 'ctrl'}, 'z', 'Slack')
 launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
--- launcher({'cmd', 'ctrl'}, 'z', 'Slack')
--- x : Reminders
--- c : Preview
--- v : QuickTime Player
--- b : Calendar
+launcherNew({'cmd', 'ctrl'}, 'x', 'Reminders')
+launcherNew({'cmd', 'ctrl'}, 'c', 'Preview')
+launcherNew({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
+launcherNew({'cmd', 'ctrl'}, 'b', 'Calendar')
 launcher({'cmd', 'ctrl'}, 'n', 'Microsoft To Do')
 launcher({'cmd', 'ctrl'}, 'm', 'Simplenote')
+launcher({'cmd', 'ctrl'}, ',', 'Android Studio')
 
--- Android Studio
 -- Cisco AnyConnect Secure Mobility Client
 
 -------------------------------------------------------------------------------
@@ -414,13 +388,4 @@ remapKey({'alt', 'shift'}, 'l', keyCode('right', {'alt'}))
 * controll + shift + m
   * InteliJでクラスのメンバを一覧
 ]]
-
--------------------------------------------------------------------------------
-if (leftHandFlag) then
-   remapKey({'command'}, 'e', keyCode('up'))
-   remapKey({'command'}, 'd', keyCode('down'))
-   remapKey({'command'}, 's', keyCode('left'))
-   remapKey({'command'}, 'f', keyCode('right'))
-   remapKey({'command'}, 'g', keyCode('delete', {'command'}))
-end
 
