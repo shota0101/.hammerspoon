@@ -78,19 +78,18 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
-launcher({'cmd', 'ctrl'}, '1', 'AS Timer')
-launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
-launcher({'cmd', 'ctrl'}, '2', 'Google Keep')
-launcher({'cmd', 'ctrl'}, '3', 'YouTube')
-launcher({'cmd', 'ctrl'}, '4', 'Google ドライブ')
-launcher({'cmd', 'ctrl'}, '5', 'Safari')
+launcher({'cmd', 'ctrl'}, '1', 'Vivaldi')
+launcher({'cmd', 'ctrl'}, '2', 'Simplenote')
+launcher({'cmd', 'ctrl'}, '3', 'Google Keep')
+launcher({'cmd', 'ctrl'}, '4', 'YouTube')
+launcher({'cmd', 'ctrl'}, '5', 'Google ドライブ')
 launcher({'cmd', 'ctrl'}, '6', 'Opera')
 launcher({'cmd', 'ctrl'}, '7', 'Brave Browser')
-launcher({'cmd', 'ctrl'}, '8', 'Firefox')
-launcher({'cmd', 'ctrl'}, '9', 'Kindle')
-launcher({'cmd', 'ctrl'}, '0', 'Helium')
+launcher({'cmd', 'ctrl'}, '8', 'Helium')
+launcher({'cmd', 'ctrl'}, '9', 'Firefox')
+launcher({'cmd', 'ctrl'}, '0', 'Safari')
 
-launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
+launcher({'cmd', 'ctrl'}, 'a', 'AS Timer')
 launcher({'cmd', 'ctrl'}, 's', 'Google Chrome')
 -- d : 辞書
 -- f : 最大化
@@ -112,8 +111,8 @@ launcher({'cmd', 'ctrl'}, 'w', 'iTerm')
 launcher({'cmd', 'ctrl'}, 'u', 'OpenEmu')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
-launcher({'cmd', 'ctrl'}, 'o', 'IntelliJ IDEA CE')
-launcher({'cmd', 'ctrl'}, 'p', 'LINE')
+launcher({'cmd', 'ctrl'}, 'o', 'LINE')
+launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
 
 launcher({'cmd', 'ctrl'}, 'z', 'Slack')
 launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
@@ -121,9 +120,11 @@ launcherNew({'cmd', 'ctrl'}, 'x', 'Reminders')
 launcherNew({'cmd', 'ctrl'}, 'c', 'Preview')
 launcherNew({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
 launcherNew({'cmd', 'ctrl'}, 'b', 'Calendar')
-launcher({'cmd', 'ctrl'}, 'n', 'Microsoft To Do')
-launcher({'cmd', 'ctrl'}, 'm', 'Simplenote')
-launcher({'cmd', 'ctrl'}, ',', 'Android Studio')
+
+launcher({'cmd', 'ctrl'}, 'n', 'Kindle')
+launcher({'cmd', 'ctrl'}, 'm', 'Microsoft To Do')
+launcher({'cmd', 'ctrl'}, ',', 'IntelliJ IDEA CE')
+launcher({'cmd', 'ctrl'}, '.', 'Android Studio')
 
 -- Cisco AnyConnect Secure Mobility Client
 
