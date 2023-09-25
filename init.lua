@@ -1,4 +1,4 @@
-isNewSystem=false
+isNewSystem=true
 
 -------------------------------------------------------------------------------
 
@@ -48,16 +48,16 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
 end)
 
 -- Terminal.app
-hs.hotkey.bind({'cmd', 'ctrl'}, '1', function()
-  hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
-end)
-launcher({'cmd', 'ctrl'}, '1', 'Utilities/Terminal')
+-- hs.hotkey.bind({'cmd', 'ctrl'}, '1', function()
+--   hs.application.launchOrFocus('/System/Applications/Utilities/Terminal.app')
+-- end)
+-- launcher({'cmd', 'ctrl'}, '1', 'Utilities/Terminal')
 
 -- iTunes
+launcher({'cmd', 'ctrl'}, 't', 'iTunes')
 hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.application.launchOrFocus('/System/Applications/Music.app')
 end)
-launcher({'cmd', 'ctrl'}, 't', 'iTunes')
 
 -- Simulator.app
 hs.hotkey.bind({'alt', 'ctrl'}, 'n', function()
