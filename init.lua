@@ -78,19 +78,22 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
-launcher({'cmd', 'ctrl'}, '1', 'Vivaldi')
-launcher({'cmd', 'ctrl'}, '2', 'Simplenote')
-launcher({'cmd', 'ctrl'}, '3', 'Google Keep')
-launcher({'cmd', 'ctrl'}, '4', 'YouTube')
-launcher({'cmd', 'ctrl'}, '5', 'Google ドライブ')
-launcher({'cmd', 'ctrl'}, '6', 'Opera')
-launcher({'cmd', 'ctrl'}, '7', 'Brave Browser')
-launcher({'cmd', 'ctrl'}, '8', 'Helium')
+-- 1 : 1st profile
+launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
+-- 1 : 2nd profile
+launcher({'cmd', 'ctrl'}, '4', 'Google Keep')
+launcher({'cmd', 'ctrl'}, '5', 'YouTube')
+launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
+launcher({'cmd', 'ctrl'}, '7', '')
+launcher({'cmd', 'ctrl'}, '8', 'Vivaldi')
 launcher({'cmd', 'ctrl'}, '9', 'Firefox')
 launcher({'cmd', 'ctrl'}, '0', 'Safari')
+-- Opera
+-- Brave Browser
+-- Helium
 
 launcher({'cmd', 'ctrl'}, 'a', 'AS Timer')
-launcher({'cmd', 'ctrl'}, 's', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, 's', 'Simplenote')
 -- d : 辞書
 -- f : 最大化
 launcherNew({'cmd', 'ctrl'}, 'g', 'System Preferences')
