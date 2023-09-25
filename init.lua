@@ -78,13 +78,14 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
--- 1 : 1st profile
+-- 1 : chrome profile
 launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
--- 1 : 2nd profile
+-- 1 : chrome profile
 launcher({'cmd', 'ctrl'}, '4', 'Google Keep')
 launcher({'cmd', 'ctrl'}, '5', 'YouTube')
-launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
-launcher({'cmd', 'ctrl'}, '7', '')
+launcher({'cmd', 'ctrl'}, '6', 'todo')
+-- launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
+-- 7 : chrome profile
 launcher({'cmd', 'ctrl'}, '8', 'Vivaldi')
 launcher({'cmd', 'ctrl'}, '9', 'Firefox')
 launcher({'cmd', 'ctrl'}, '0', 'Safari')
