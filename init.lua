@@ -83,12 +83,12 @@ launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
 -- 1 : chrome profile
 launcher({'cmd', 'ctrl'}, '4', 'Google Keep')
 launcher({'cmd', 'ctrl'}, '5', 'YouTube')
-launcher({'cmd', 'ctrl'}, '6', 'todo')
--- launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
+launcher({'cmd', 'ctrl'}, '5', 'todo')
+launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
 -- 7 : chrome profile
-launcher({'cmd', 'ctrl'}, '8', 'Vivaldi')
+launcher({'cmd', 'ctrl'}, '8', 'Safari')
 launcher({'cmd', 'ctrl'}, '9', 'Firefox')
-launcher({'cmd', 'ctrl'}, '0', 'Safari')
+launcher({'cmd', 'ctrl'}, '0', 'Vivaldi')
 -- Opera
 -- Brave Browser
 -- Helium
