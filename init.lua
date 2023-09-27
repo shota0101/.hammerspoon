@@ -85,16 +85,15 @@ launcher({'cmd', 'ctrl'}, '4', 'Google Keep')
 launcher({'cmd', 'ctrl'}, '5', 'YouTube')
 launcher({'cmd', 'ctrl'}, '5', 'todo')
 launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
--- 7 : chrome profile
-launcher({'cmd', 'ctrl'}, '8', 'Safari')
-launcher({'cmd', 'ctrl'}, '9', 'Firefox')
-launcher({'cmd', 'ctrl'}, '0', 'Vivaldi')
--- Opera
+launcher({'cmd', 'ctrl'}, '7', 'Helium')
+launcher({'cmd', 'ctrl'}, '8', 'Opera')
+launcher({'cmd', 'ctrl'}, '9', 'Safari')
+launcher({'cmd', 'ctrl'}, '0', 'Firefox')
+
 -- Brave Browser
--- Helium
 
 launcher({'cmd', 'ctrl'}, 'a', 'AS Timer')
-launcher({'cmd', 'ctrl'}, 's', 'Simplenote')
+launcher({'cmd', 'ctrl'}, 's', 'Vivaldi')
 -- d : 辞書
 -- f : 最大化
 launcherNew({'cmd', 'ctrl'}, 'g', 'System Preferences')
@@ -125,10 +124,11 @@ launcherNew({'cmd', 'ctrl'}, 'c', 'Preview')
 launcherNew({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
 launcherNew({'cmd', 'ctrl'}, 'b', 'Calendar')
 
-launcher({'cmd', 'ctrl'}, 'n', 'Kindle')
 launcher({'cmd', 'ctrl'}, 'm', 'Microsoft To Do')
-launcher({'cmd', 'ctrl'}, ',', 'IntelliJ IDEA CE')
-launcher({'cmd', 'ctrl'}, '.', 'Android Studio')
+launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
+launcher({'cmd', 'ctrl'}, ',', 'Kindle')
+launcher({'cmd', 'ctrl'}, '.', 'IntelliJ IDEA CE')
+launcher({'cmd', 'ctrl'}, '/', 'Android Studio')
 
 -- Cisco AnyConnect Secure Mobility Client
 
