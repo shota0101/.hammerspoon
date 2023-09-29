@@ -1,4 +1,5 @@
 isNewSystem=true
+isYoutube=false
 
 -------------------------------------------------------------------------------
 
@@ -368,4 +369,16 @@ eventTap:start()
 * controll + shift + m
   * InteliJでクラスのメンバを一覧
 ]]
+
+if (isYoutube) then
+  remapKey({'alt'}, 'q', keyCode('down'))
+  remapKey({'alt'}, 'w', keyCode('return'))
+  remapKey({'alt'}, 'a', keyCode('left'))
+  remapKey({'alt'}, 's', keyCode('v', {'cmd'}))
+  remapKey({'alt'}, 'd', keyCode('-', {'shift'}))
+  remapKey({'alt'}, 'z', keyCode('j', {'cmd'}))
+  remapKey({'alt'}, 'x', keyCode('right', {'alt', 'shift'}))
+  remapKey({'alt'}, 'c', keyCode('c', {'cmd'}))
+  launcher({'cmd', 'ctrl'}, 'd', 'Firefox')
+end
 
