@@ -44,7 +44,7 @@ end
 -- アプリごとの設定
 
 -- Finder.app
-hs.hotkey.bind({'cmd', 'ctrl'}, 'q', function()
+hs.hotkey.bind({'cmd', 'ctrl'}, 's', function()
    hs.application.launchOrFocus('/System/Library/CoreServices/Finder.app')
 end)
 
@@ -79,34 +79,32 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
--- 1 : chrome profile
-launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
--- 1 : chrome profile
-launcher({'cmd', 'ctrl'}, '4', 'Google Keep')
-launcher({'cmd', 'ctrl'}, '5', 'YouTube')
-launcher({'cmd', 'ctrl'}, '5', 'todo')
-launcher({'cmd', 'ctrl'}, '6', 'Google ドライブ')
-launcher({'cmd', 'ctrl'}, '7', 'Helium')
-launcher({'cmd', 'ctrl'}, '8', 'Opera')
-launcher({'cmd', 'ctrl'}, '9', 'Safari')
-launcher({'cmd', 'ctrl'}, '0', 'Firefox')
+launcher({'cmd', 'ctrl'}, '1', 'Firefox')
+launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
+launcher({'cmd', 'ctrl'}, '3', 'Google Chrome')
 
+launcher({'cmd', 'ctrl'}, '9', 'Opera')
+launcher({'cmd', 'ctrl'}, '0', 'Safari')
+-- YouTube
+-- Google Keep
 -- Brave Browser
+-- Helium
 
 launcher({'cmd', 'ctrl'}, 'a', 'AS Timer')
-launcher({'cmd', 'ctrl'}, 's', 'Vivaldi')
+-- s : Finder
 -- d : 辞書
 -- f : 最大化
 launcherNew({'cmd', 'ctrl'}, 'g', 'System Preferences')
--- h
+launcher({'cmd', 'ctrl'}, 'h', 'Helium')
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 -- ; : Rectangle
 
 launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
--- q : Finder
-launcher({'cmd', 'ctrl'}, 'w', 'iTerm')
+
+launcher({'cmd', 'ctrl'}, 'q', 'iTerm')
+launcher({'cmd', 'ctrl'}, 'w', 'Vivaldi')
 -- e : Rectangle
 -- r : Rectangle
 -- t : iTunes
@@ -116,7 +114,7 @@ launcher({'cmd', 'ctrl'}, 'u', 'OpenEmu')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
 launcher({'cmd', 'ctrl'}, 'o', 'LINE')
-launcher({'cmd', 'ctrl'}, 'p', 'Visual Studio Code')
+launcher({'cmd', 'ctrl'}, 'p', 'IntelliJ IDEA CE')
 
 launcher({'cmd', 'ctrl'}, 'z', 'Slack')
 launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
@@ -128,8 +126,7 @@ launcherNew({'cmd', 'ctrl'}, 'b', 'Calendar')
 launcher({'cmd', 'ctrl'}, 'm', 'Microsoft To Do')
 launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
 launcher({'cmd', 'ctrl'}, ',', 'Kindle')
-launcher({'cmd', 'ctrl'}, '.', 'IntelliJ IDEA CE')
-launcher({'cmd', 'ctrl'}, '/', 'Android Studio')
+launcher({'cmd', 'ctrl'}, '.', 'Android Studio')
 
 -- Cisco AnyConnect Secure Mobility Client
 
@@ -379,6 +376,5 @@ if (isYoutube) then
   remapKey({'alt'}, 'z', keyCode('j', {'cmd'}))
   remapKey({'alt'}, 'x', keyCode('right', {'alt', 'shift'}))
   remapKey({'alt'}, 'c', keyCode('c', {'cmd'}))
-  launcher({'cmd', 'ctrl'}, 'd', 'Firefox')
 end
 
