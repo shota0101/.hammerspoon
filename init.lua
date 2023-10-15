@@ -139,8 +139,8 @@ remapKey({'ctrl'}, 'v', keyCode('pagedown'))
 -------------------------------------------------------------------------------
 -- {'alt'}系
 
-remapKey({'alt'}, 'tab', keyCode('pageup'))
-remapKey({'alt'}, 'q', keyCode('pagedown'))
+remapKey({'alt'}, 'tab', keyCode('pagedown'))
+remapKey({'alt'}, 'q', keyCode('pageup'))
 -- w : emacsのキーバインドと衝突（2画面にしたときの上画面への移動）
 -- e : emacs
 remapKey({'alt'}, 'r', keyCode('return'))
