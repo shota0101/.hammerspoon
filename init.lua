@@ -80,8 +80,8 @@ end)
 
 -- ` : ウィンドウの選択
 launcher({'cmd', 'ctrl'}, '1', 'Firefox')
-launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
-launcher({'cmd', 'ctrl'}, '3', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, '3', 'Visual Studio Code')
 
 launcher({'cmd', 'ctrl'}, '9', 'Opera')
 launcher({'cmd', 'ctrl'}, '0', 'Safari')
