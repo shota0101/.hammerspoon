@@ -3,6 +3,12 @@ isYoutube=false
 
 -------------------------------------------------------------------------------
 
+-- logitech device manager用
+hs.hotkey.bind({'cmd', 'ctrl', 'alt', 'shift'}, "-", function()
+  hs.eventtap.event.newSystemKeyEvent('PLAY', true):post()
+  hs.eventtap.event.newSystemKeyEvent('PLAY', false):post()
+end)
+
 -- 関数定義
 
 local function keyCode(key, modifiers)
