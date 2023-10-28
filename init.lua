@@ -89,6 +89,8 @@ launcher({'cmd', 'ctrl'}, '1', 'Spotify')
 launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, '3', 'Google Chrome')
 
+launcher({'cmd', 'ctrl'}, '7', 'Prime Video')
+
 launcher({'cmd', 'ctrl'}, '8', 'Opera')
 launcher({'cmd', 'ctrl'}, '9', 'Firefox')
 launcher({'cmd', 'ctrl'}, '0', 'Safari')
