@@ -163,8 +163,8 @@ remapKey({'alt'}, 'o', keyCode('end'))
 -- a : emacsのキーバインドと衝突（2画面にしたときの左画面への移動）
 -- s : emacsでmarkdownのキーバインド
 -- d : emacsのキーバインド
-remapKey({'alt'}, 'f', keyCode('down'))
-remapKey({'alt'}, 'g', keyCode('right'))
+-- remapKey({'alt'}, 'f', keyCode('down'))
+-- remapKey({'alt'}, 'g', keyCode('right'))
 -- h
 remapKey({'alt'}, 'j', keyCode('left'))
 remapKey({'alt'}, 'k', keyCode('down'))
