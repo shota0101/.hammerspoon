@@ -1,5 +1,6 @@
 isNewSystem=true
 isYoutube=false
+isManga=false
 
 -------------------------------------------------------------------------------
 
@@ -385,5 +386,10 @@ if (isYoutube) then
   remapKey({'alt'}, 'z', keyCode('j', {'cmd'}))
   remapKey({'alt'}, 'x', keyCode('right', {'alt', 'shift'}))
   remapKey({'alt'}, 'c', keyCode('c', {'cmd'}))
+end
+
+if (isManga) then
+  remapKey({'alt'}, 'TAB', keyCode('3', {'cmd', 'shift'}))
+  remapKey({'alt'}, 'q', keyCode('left'))
 end
 
