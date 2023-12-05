@@ -66,6 +66,7 @@ launcher({'cmd', 'ctrl'}, 't', 'iTunes')
 hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.application.launchOrFocus('/System/Applications/Music.app')
 end)
+launcher({'cmd', 'ctrl'}, 't', 'VOX')
 
 -- Simulator.app
 hs.hotkey.bind({'alt', 'ctrl'}, 'n', function()
