@@ -87,15 +87,17 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
-launcher({'cmd', 'ctrl'}, '1', 'Spotify')
-launcher({'cmd', 'ctrl'}, '2', 'Visual Studio Code')
+-- 1 : Chrome
+-- 2 : Chrome
 launcher({'cmd', 'ctrl'}, '3', 'Google Chrome')
+-- 4 : Chrome
 
-launcher({'cmd', 'ctrl'}, '7', 'Prime Video')
-
-launcher({'cmd', 'ctrl'}, '8', 'Opera')
+launcher({'cmd', 'ctrl'}, '5', 'Prime Video')
+launcher({'cmd', 'ctrl'}, '6', 'Spotify')
+launcher({'cmd', 'ctrl'}, '7', 'Opera')
+launcher({'cmd', 'ctrl'}, '8', 'Safari')
 launcher({'cmd', 'ctrl'}, '9', 'Firefox')
-launcher({'cmd', 'ctrl'}, '0', 'Safari')
+launcher({'cmd', 'ctrl'}, '0', 'Visual Studio Code')
 -- YouTube
 -- Google Keep
 -- Brave Browser
