@@ -87,23 +87,17 @@ end)
 -- {'command', 'ctrl'}系
 
 -- ` : ウィンドウの選択
--- 1 : Chrome
--- 2 : Chrome
-launcher({'cmd', 'ctrl'}, '3', 'Google Chrome')
--- 4 : Chrome
-
-launcher({'cmd', 'ctrl'}, '5', 'Prime Video')
-launcher({'cmd', 'ctrl'}, '6', 'Spotify')
-launcher({'cmd', 'ctrl'}, '7', 'Opera')
-launcher({'cmd', 'ctrl'}, '8', 'Safari')
+launcher({'cmd', 'ctrl'}, '3', 'Google Keep')
+launcher({'cmd', 'ctrl'}, '4', '2ch')
+launcher({'cmd', 'ctrl'}, '5', 'Twitter')
+launcher({'cmd', 'ctrl'}, '6', 'Feedly')
+launcher({'cmd', 'ctrl'}, '7', 'Prime Video')
+launcher({'cmd', 'ctrl'}, '8', 'Spotify')
 launcher({'cmd', 'ctrl'}, '9', 'Firefox')
 launcher({'cmd', 'ctrl'}, '0', 'Visual Studio Code')
--- YouTube
--- Google Keep
--- Brave Browser
--- Helium
 
-launcher({'cmd', 'ctrl'}, 'a', 'AS Timer')
+
+launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
 -- s : Finder
 -- d : 辞書
 -- f : 最大化
@@ -117,13 +111,14 @@ remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
 
 launcher({'cmd', 'ctrl'}, 'q', 'iTerm')
-launcher({'cmd', 'ctrl'}, 'w', 'Vivaldi')
+launcher({'cmd', 'ctrl'}, 'w', 'Google Chrome')
 -- e : Rectangle
 -- r : Rectangle
 -- t : iTunes
 -- t : Finderでファイルをサイドバーに追加
 -- y : Xcode Run
-launcher({'cmd', 'ctrl'}, 'u', 'OpenEmu')
+
+launcher({'cmd', 'ctrl'}, 'u', 'AS Timer')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
 launcher({'cmd', 'ctrl'}, 'o', 'LINE')
