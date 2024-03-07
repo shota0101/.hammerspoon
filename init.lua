@@ -86,16 +86,20 @@ end)
 -------------------------------------------------------------------------------
 -- {'command', 'ctrl'}系
 
--- ` : ウィンドウの選択
-launcher({'cmd', 'ctrl'}, '3', 'Google Keep')
-launcher({'cmd', 'ctrl'}, '4', '2ch')
-launcher({'cmd', 'ctrl'}, '5', 'Twitter')
-launcher({'cmd', 'ctrl'}, '6', 'Feedly')
-launcher({'cmd', 'ctrl'}, '7', 'Prime Video')
-launcher({'cmd', 'ctrl'}, '8', 'Spotify')
-launcher({'cmd', 'ctrl'}, '9', 'Firefox')
-launcher({'cmd', 'ctrl'}, '0', 'Visual Studio Code')
 
+-- ` : ウィンドウの選択
+-- launcher({'cmd', 'ctrl'}, '1', 'Firefox')
+-- launcher({'cmd', 'ctrl'}, '2', 'Safari')
+launcher({'cmd', 'ctrl'}, '3', '2ch')
+launcher({'cmd', 'ctrl'}, '4', 'YouTube')
+launcher({'cmd', 'ctrl'}, '5', 'Abema')
+launcher({'cmd', 'ctrl'}, '6', 'Sound Library')
+launcher({'cmd', 'ctrl'}, '7', 'Prime Video')
+launcher({'cmd', 'ctrl'}, '8', 'radar')
+launcher({'cmd', 'ctrl'}, '9', 'weather')
+launcher({'cmd', 'ctrl'}, '0', 'Spotify')
+
+launcher({'cmd', 'ctrl'}, '9', 'YouTube')
 
 launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
 -- s : Finder
@@ -121,8 +125,10 @@ launcher({'cmd', 'ctrl'}, 'w', 'Google Chrome')
 launcher({'cmd', 'ctrl'}, 'u', 'AS Timer')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
+launcher({'cmd', 'ctrl'}, 'o', 'Visual Studio Code')
 launcher({'cmd', 'ctrl'}, 'o', 'LINE')
 launcher({'cmd', 'ctrl'}, 'p', 'IntelliJ IDEA CE')
+launcher({'cmd', 'ctrl'}, 'p', 'Google Keep')
 
 launcher({'cmd', 'ctrl'}, 'z', 'Slack')
 launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
@@ -130,11 +136,14 @@ launcherNew({'cmd', 'ctrl'}, 'x', 'Reminders')
 launcherNew({'cmd', 'ctrl'}, 'c', 'Preview')
 launcherNew({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
 launcherNew({'cmd', 'ctrl'}, 'b', 'Calendar')
+launcher({'cmd', 'ctrl'}, 'b', 'Google Calendar')
 
 launcher({'cmd', 'ctrl'}, 'm', 'Microsoft To Do')
 launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
 launcher({'cmd', 'ctrl'}, ',', 'Kindle')
 launcher({'cmd', 'ctrl'}, '.', 'Android Studio')
+launcher({'cmd', 'ctrl'}, '.', 'OpenEmu')
+launcher({'cmd', 'ctrl'}, '/', 'todo')
 
 -- Cisco AnyConnect Secure Mobility Client
 
