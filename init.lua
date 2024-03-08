@@ -99,8 +99,6 @@ launcher({'cmd', 'ctrl'}, '8', 'radar')
 launcher({'cmd', 'ctrl'}, '9', 'weather')
 launcher({'cmd', 'ctrl'}, '0', 'Spotify')
 
-launcher({'cmd', 'ctrl'}, '9', 'YouTube')
-
 launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
 -- s : Finder
 -- d : 辞書
