@@ -96,10 +96,11 @@ launcher({'cmd', 'ctrl'}, '6', 'Sound Library')
 launcher({'cmd', 'ctrl'}, '7', 'Abema')
 launcher({'cmd', 'ctrl'}, '8', 'Feedly')
 launcher({'cmd', 'ctrl'}, '9', 'Safari')
+launcher({'cmd', 'ctrl'}, '0', 'Firefox')
 launcher({'cmd', 'ctrl'}, '-', 'radar')
 launcher({'cmd', 'ctrl'}, '=', 'weather')
 
-launcher({'cmd', 'ctrl'}, 'a', 'Firefox')
+launcher({'cmd', 'ctrl'}, 'a', 'Google Keep')
 -- launcher({'cmd', 'ctrl'}, 'a', 'Vivaldi')
 -- s : Finder
 -- d : 辞書
