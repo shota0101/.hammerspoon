@@ -88,18 +88,19 @@ end)
 
 
 -- ` : ウィンドウの選択
--- launcher({'cmd', 'ctrl'}, '3', 'YouTube')
-launcher({'cmd', 'ctrl'}, '3', 'Google Keep')
-launcher({'cmd', 'ctrl'}, '4', 'jazzradio')
+launcher({'cmd', 'ctrl'}, '2', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, '4', 'LINE')
 launcher({'cmd', 'ctrl'}, '5', 'Spotify')
 launcher({'cmd', 'ctrl'}, '6', 'Sound Library')
-launcher({'cmd', 'ctrl'}, '7', 'Abema')
+launcher({'cmd', 'ctrl'}, '7', 'Prime Video')
 launcher({'cmd', 'ctrl'}, '8', 'Feedly')
--- launcher({'cmd', 'ctrl'}, '8', 'Safari')
-launcher({'cmd', 'ctrl'}, '9', 'Vivaldi')
-launcher({'cmd', 'ctrl'}, '0', 'Firefox')
+launcher({'cmd', 'ctrl'}, '9', 'Safari')
+launcher({'cmd', 'ctrl'}, '0', 'Vivaldi')
 launcher({'cmd', 'ctrl'}, '-', 'radar')
 launcher({'cmd', 'ctrl'}, '=', 'weather')
+-- launcher({'cmd', 'ctrl'}, '4', 'Google Keep')
+-- launcher({'cmd', 'ctrl'}, '4', 'jazzradio')
+-- launcher({'cmd', 'ctrl'}, '7', 'Abema')
 
 launcher({'cmd', 'ctrl'}, 'a', 'Emacs')
 -- s : Finder
@@ -115,7 +116,7 @@ remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
 
 launcher({'cmd', 'ctrl'}, 'q', 'iTerm')
-launcher({'cmd', 'ctrl'}, 'w', 'Google Chrome')
+launcher({'cmd', 'ctrl'}, 'w', 'Firefox')
 -- e : Rectangle
 -- r : Rectangle
 -- t : iTunes
@@ -126,12 +127,10 @@ launcher({'cmd', 'ctrl'}, 'u', 'AS Timer')
 remapKey({'cmd', 'ctrl'}, 'i', keyCode('up', {'alt', 'shift'}))
 -- i : Finderで情報を見る
 launcher({'cmd', 'ctrl'}, 'o', 'Visual Studio Code')
-launcher({'cmd', 'ctrl'}, 'o', 'WeChat')
-launcher({'cmd', 'ctrl'}, 'p', 'IntelliJ IDEA CE')
-launcher({'cmd', 'ctrl'}, 'p', 'Prime Video')
+launcher({'cmd', 'ctrl'}, 'p', 'Android Studio')
 
 launcher({'cmd', 'ctrl'}, 'z', 'Slack')
-launcher({'cmd', 'ctrl'}, 'z', 'LINE')
+launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
 launcherNew({'cmd', 'ctrl'}, 'x', 'Reminders')
 launcherNew({'cmd', 'ctrl'}, 'c', 'Preview')
 launcherNew({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
@@ -141,7 +140,7 @@ launcher({'cmd', 'ctrl'}, 'b', 'Google Calendar')
 launcher({'cmd', 'ctrl'}, 'm', 'Microsoft To Do')
 launcher({'cmd', 'ctrl'}, 'n', 'Simplenote')
 launcher({'cmd', 'ctrl'}, ',', 'Kindle')
-launcher({'cmd', 'ctrl'}, '.', 'Android Studio')
+launcher({'cmd', 'ctrl'}, '.', 'IntelliJ IDEA CE')
 launcher({'cmd', 'ctrl'}, '.', 'OpenEmu')
 launcher({'cmd', 'ctrl'}, '/', 'todo')
 
