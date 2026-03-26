@@ -3,6 +3,13 @@ isYoutube=false
 isManga=false
 
 -------------------------------------------------------------------------------
+-- F8キーを再生・一時停止に
+
+hs.hotkey.bind({}, 'F8', function()
+  hs.eventtap.event.newSystemKeyEvent("PLAY", true):post()
+end)
+
+-------------------------------------------------------------------------------
 
 -- logitech device manager用
 hs.hotkey.bind({'cmd', 'ctrl', 'alt', 'shift'}, "-", function()
