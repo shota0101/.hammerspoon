@@ -120,7 +120,7 @@ remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'l', keyCode('right', {'alt', 'shift'}))
 -- ; : Rectangle
 
-launcher({'cmd', 'ctrl'}, 'tab', 'KeePassX')
+launcher({'cmd', 'ctrl'}, 'tab', 'KeePassXC')
 
 launcher({'cmd', 'ctrl'}, 'q', 'iTerm')
 launcher({'cmd', 'ctrl'}, 'w', 'Firefox')
