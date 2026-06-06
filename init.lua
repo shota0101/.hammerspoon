@@ -138,6 +138,7 @@ launcher({'cmd', 'ctrl'}, 'p', 'Android Studio')
 
 launcher({'cmd', 'ctrl'}, 'z', 'Slack')
 launcher({'cmd', 'ctrl'}, 'z', 'WeChat')
+launcher({'cmd', 'ctrl'}, 'z', 'WhatsApp')
 launcherNew({'cmd', 'ctrl'}, 'x', 'Reminders')
 launcherNew({'cmd', 'ctrl'}, 'c', 'Preview')
 launcherNew({'cmd', 'ctrl'}, 'v', 'QuickTime Player')
