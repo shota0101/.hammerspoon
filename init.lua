@@ -113,7 +113,7 @@ launcher({'cmd', 'ctrl'}, 'a', 'Emacs')
 -- s : Finder
 -- d : 辞書
 -- f : 最大化
-launcherNew({'cmd', 'ctrl'}, 'g', 'System Preferences')
+launcherNew({'cmd', 'ctrl'}, 'g', 'System Settings')
 launcher({'cmd', 'ctrl'}, 'h', 'Helium')
 remapKey({'cmd', 'ctrl'}, 'j', keyCode('left', {'alt', 'shift'}))
 remapKey({'cmd', 'ctrl'}, 'k', keyCode('down', {'alt', 'shift'}))
